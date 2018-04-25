@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/btnSkip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/skip" />
+    <AbsoluteLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/btnSee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/see" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/btnNext" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/next" />
+    </AbsoluteLayout>
+</FrameLayout>

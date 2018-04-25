@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View style="@style/normal_line_vertical" />
+    <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" style="@style/MatchWrap.Vertical">
+        <TextView android:id="@id/tvProblem" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/normal_tx_theme" />
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="@dimen/me_head_size" android:layout_height="@dimen/me_head_size" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+            <LinearLayout android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivHead" android:layout_centerVertical="true" style="@style/MatchWrap.Vertical">
+                <TextView android:id="@id/tvName" android:text="夏德宝" style="@style/normal_tx_theme" />
+                <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvTime" android:layout_marginTop="@dimen/regular_dimen_x2" style="@style/normal_tx_theme" />
+                <TextView android:textSize="@dimen/font_small" android:id="@id/tvAnswer" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/normal_tx_theme" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

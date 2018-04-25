@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View style="@style/normal_line_vertical" />
+    <RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x8" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/ivIcon" android:layout_width="@dimen/me_head_size" android:layout_height="@dimen/me_head_size" android:src="@mipmap/icon_notice" />
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/tvTitle" android:layout_marginLeft="@dimen/regular_dimen_x10" android:singleLine="true" android:layout_toLeftOf="@id/tvTime" android:layout_toRightOf="@id/ivIcon" android:layout_alignTop="@id/ivIcon" style="@style/normal_tx_theme.Match" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/tvContent" android:layout_toRightOf="@id/ivIcon" android:layout_below="@id/tvTitle" android:layout_alignLeft="@id/tvTitle" style="@style/normal_tx_theme.Match" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:gravity="center_vertical" android:id="@id/tvTime" android:layout_alignTop="@id/tvTitle" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

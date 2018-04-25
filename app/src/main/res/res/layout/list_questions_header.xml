@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ureading.sunongtong.views.widget.IconButton android:textSize="@dimen/font_medium" android:textColor="@android:color/white" android:id="@id/btnPublish" android:background="@drawable/btn_theme" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginRight="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x10" android:minHeight="0.0dip" android:text="快速提问" android:drawableLeft="@mipmap/icon_questions" app:iconPadding="@dimen/regular_dimen_x5" />
+</LinearLayout>

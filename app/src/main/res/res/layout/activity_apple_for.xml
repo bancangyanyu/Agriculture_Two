@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <LinearLayout android:gravity="center" android:id="@id/btnApplyFor" android:background="@drawable/bg_btn_orange" android:paddingTop="@dimen/regular_dimen_x30" android:paddingBottom="@dimen/regular_dimen_x30" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x40" android:layout_marginRight="@dimen/regular_dimen_x20" style="@style/MatchWrap.Vertical">
+        <TextView android:textColor="@android:color/white" android:text="手机申报" style="@style/normal_tx_theme" />
+        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/white" android:id="@id/tvInfo" android:layout_marginTop="@dimen/regular_dimen_x10" android:text="点击马上申请>>" style="@style/normal_tx_theme" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/btnInfo" android:background="@drawable/bg_btn_blue" android:paddingTop="@dimen/regular_dimen_x30" android:paddingBottom="@dimen/regular_dimen_x30" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x20" style="@style/MatchWrap.Vertical">
+        <TextView android:textColor="@android:color/white" android:text="详细信息" style="@style/normal_tx_theme" />
+        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/white" android:id="@id/tvDetails" android:layout_marginTop="@dimen/regular_dimen_x10" android:text="申请通过后填写>>" style="@style/normal_tx_theme" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/btnTraining" android:background="@drawable/bg_btn_green" android:paddingTop="@dimen/regular_dimen_x40" android:paddingBottom="@dimen/regular_dimen_x40" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x20" style="@style/MatchWrap.Vertical">
+        <TextView android:textColor="@android:color/white" android:text="我的培训班" style="@style/normal_tx_theme" />
+    </LinearLayout>
+</LinearLayout>

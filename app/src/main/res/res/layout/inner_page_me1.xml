@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/btnProfile" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x20" android:paddingRight="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchWrap">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width" app:border_color="#ffc6c6c6" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <FrameLayout android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivHead" android:layout_centerVertical="true" style="@style/MatchWrap">
+                <LinearLayout android:gravity="center_vertical" style="@style/MatchWrap.Horizontal">
+                    <LinearLayout android:id="@id/lltInfo" android:visibility="visible" style="@style/WrapWrap.Vertical">
+                        <TextView android:id="@id/tvName" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:id="@id/tvIdentity" android:layout_marginTop="@dimen/regular_dimen_x2" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center|right" style="@style/MatchWrap.Horizontal">
+                        <ImageView android:id="@id/ivRight" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/WrapWrap" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textColor="@color/gray_text_color" android:layout_gravity="center_vertical" android:id="@id/txInfo" android:background="@android:color/white" android:paddingTop="@dimen/text_size_10" android:paddingBottom="@dimen/text_size_10" android:visibility="visible" android:text="点击头像登录" style="@style/normal_tx_theme.Match" />
+            </FrameLayout>
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+        <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+            <LinearLayout android:gravity="center" android:background="@android:color/white" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x15" android:src="@mipmap/icon_personal_04" />
+                <TextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/txCount" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x10" android:text="已连续签到0天" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x15" android:src="@mipmap/icon_personal_02" />
+                <TextView android:textSize="@dimen/font_small" android:gravity="center" android:id="@id/txIntegral" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x10" android:text="0积分" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnMall" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x15" android:src="@mipmap/icon_personal_03" />
+                <TextView android:textSize="@dimen/font_small" android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x10" android:text="积分商城" style="@style/normal_tx_theme" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+            <LinearLayout android:gravity="center" android:id="@id/btnMyQuestion" android:background="@android:color/white" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_personal_06" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的提问" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnAnswer" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_personal_07" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的回答" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnExchange" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_communication" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的交流" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnCollect" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_personal_01" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的收藏" style="@style/normal_tx_theme" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+            <LinearLayout android:gravity="center" android:id="@id/btnAttention" android:background="@android:color/white" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_guanzhu" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的关注" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnSellOffer" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_gongqiu" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的供求" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnTraining" android:background="@android:color/white" android:visibility="visible" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_teacher" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的培训班" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <FrameLayout android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <LinearLayout android:gravity="center" android:id="@id/btnCheck" android:background="@android:color/white" android:visibility="invisible" style="@style/MatchWrap.Vertical">
+                    <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_personal_08" />
+                    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="推广日志" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/btnOne" android:background="@android:color/white" android:visibility="invisible" style="@style/MatchWrap.Vertical">
+                    <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_personal_09" />
+                    <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的一对一" style="@style/normal_tx_theme" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+            <LinearLayout android:gravity="center" android:id="@id/btnSystem" android:background="@android:color/white" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_personal_05" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="系统设置" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnFeedback" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/ic_feedback" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="意见反馈" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnShare" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/ic_share" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="分享农技耘" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/btnQR" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width" style="@style/AutoWrap.Vertical">
+                <ImageView android:layout_width="@dimen/me_icon_size" android:layout_height="@dimen/me_icon_size" android:layout_marginTop="@dimen/regular_dimen_x17" android:layout_marginBottom="@dimen/regular_dimen_x10" android:src="@mipmap/icon_personal_10" />
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_marginBottom="@dimen/regular_dimen_x15" android:text="我的二维码" style="@style/normal_tx_theme" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

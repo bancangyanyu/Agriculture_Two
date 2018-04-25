@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <EditText android:textSize="@dimen/font_small" android:id="@id/tvSearch" android:background="@drawable/bg_input_white" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingTop="@dimen/regular_dimen_x8" android:paddingBottom="@dimen/regular_dimen_x8" android:layout_marginLeft="@dimen/regular_dimen_x6" android:layout_marginTop="@dimen/regular_dimen_x5" android:layout_marginRight="@dimen/regular_dimen_x6" android:hint="搜索" android:drawableLeft="@mipmap/icon_search_black" android:drawablePadding="@dimen/regular_dimen_x5" android:inputType="textAutoComplete|textNoSuggestions" android:imeOptions="actionSearch" style="@style/normal_edt_theme" />
+    <View style="@style/normal_line_vertical" />
+    <LinearLayout android:id="@id/btnQR" android:visibility="gone" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+            <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="扫一扫" android:drawableLeft="@mipmap/icon_title_sweep" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+    </LinearLayout>
+    <RelativeLayout style="@style/MatchMatch"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/lvBase" android:listSelector="@android:color/transparent" android:foreground="?selectableItemBackground" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchAuto" />
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

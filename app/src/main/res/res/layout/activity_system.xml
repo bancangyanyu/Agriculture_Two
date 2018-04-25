@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+        <TextView android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="接受新消息通知" style="@style/normal_tx_theme" />
+        <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchPush" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+    <RelativeLayout android:id="@id/btnHot" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+        <TextView android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="客服热线" style="@style/normal_tx_theme" />
+        <TextView android:textColor="@color/gray_text_color" android:text="025-86261287" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+    <RelativeLayout android:id="@id/btnCacheSize" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+        <TextView android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="清理缓存" style="@style/normal_tx_theme" />
+        <TextView android:textColor="@color/gray_text_color" android:id="@id/tvCacheSize" android:text="0KB" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+    <RelativeLayout android:id="@id/btnVer" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+        <TextView android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="版本更新" style="@style/normal_tx_theme" />
+        <TextView android:textColor="@color/gray_text_color" android:id="@id/tvVer" android:text="V1.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+    <View android:visibility="visible" style="@style/normal_line_vertical" />
+    <RelativeLayout android:id="@id/btnFeedback" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:visibility="gone" style="@style/MatchWrap">
+        <TextView android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="意见反馈" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+    <View android:visibility="gone" style="@style/normal_line_vertical" />
+    <RelativeLayout android:id="@id/btnAbout" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+        <TextView android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="关于" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+    <LinearLayout android:gravity="bottom" style="@style/MatchMatch.Vertical">
+        <Button android:id="@id/btnExit" android:background="@drawable/btn_theme" android:layout_margin="@dimen/regular_dimen_x15" android:text="退出" style="@style/normal_btn_theme" />
+    </LinearLayout>
+</LinearLayout>

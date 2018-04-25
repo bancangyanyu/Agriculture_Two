@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+    <TextView android:gravity="center_vertical" android:id="@id/txName" android:layout_marginTop="@dimen/regular_dimen_x8" style="@style/normal_tx_theme" />
+    <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:gravity="center" android:id="@id/txType" android:layout_marginTop="@dimen/regular_dimen_x2" android:lines="2" style="@style/normal_tx_theme" />
+</LinearLayout>

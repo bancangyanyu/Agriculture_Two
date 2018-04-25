@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+        <RelativeLayout android:layout_height="@dimen/concert_view_height" style="@style/MatchWrap">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginBottom="@dimen/regular_dimen_x30" android:src="@mipmap/ic_default_head" android:layout_centerInParent="true" app:border_width="@dimen/regular_dimen_x2" app:border_color="#fff2f1f2" />
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+            <TextView android:text="姓        名" style="@style/normal_tx_theme" />
+            <EditText android:id="@id/etName" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="姓名" android:maxLength="16" style="@style/normal_edt_theme" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+            <TextView android:text="手        机" style="@style/normal_tx_theme" />
+            <EditText android:enabled="false" android:id="@id/etPhone" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:hint="手机号码" android:maxLength="11" android:inputType="phone" style="@style/normal_edt_theme" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+            <TextView android:text="密        码" style="@style/normal_tx_theme" />
+            <EditText android:id="@id/etPass" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="密码" android:maxLength="16" android:inputType="textPassword" style="@style/normal_edt_theme" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+            <TextView android:layout_height="wrap_content" android:text="确认密码 " style="@style/normal_tx_theme" />
+            <EditText android:id="@id/etSure" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:hint="再次输入密码" android:maxLength="16" android:inputType="textPassword" style="@style/normal_edt_theme" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+    </LinearLayout>
+    <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+        <View style="@style/normal_line_vertical" />
+        <RelativeLayout android:id="@id/btnIdentity" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+            <TextView android:id="@id/tx1" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="人员类别" style="@style/normal_tx_theme" />
+            <TextView android:textColorHint="@color/gray_text_color" android:gravity="center|right" android:id="@id/tx_type" android:hint="选择类型" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_toRightOf="@id/tx1" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+        <RelativeLayout android:id="@id/btnAddress" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+            <TextView android:id="@id/tx2" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="选择地区" style="@style/normal_tx_theme" />
+            <TextView android:textColorHint="@color/gray_text_color" android:gravity="center|right" android:id="@id/txAddress" android:text="" android:hint="点击选择工作地点" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_toRightOf="@id/tx2" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+    </LinearLayout>
+    <Button android:id="@id/btnRegister" android:background="@drawable/btn_theme" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x40" android:layout_marginRight="@dimen/regular_dimen_x15" android:text="@string/user_register_title" style="@style/normal_btn_theme" />
+</LinearLayout>

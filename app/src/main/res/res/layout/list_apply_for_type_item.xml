@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/regular_dimen_x20" android:paddingRight="@dimen/regular_dimen_x20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/theme_color" android:gravity="center" android:id="@id/btnDeclare" android:background="@drawable/bg_input_theme" android:paddingTop="@dimen/regular_dimen_x20" android:paddingBottom="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x15" android:text="现代青年农场主" style="@style/normal_tx_theme.Match" />
+</LinearLayout>

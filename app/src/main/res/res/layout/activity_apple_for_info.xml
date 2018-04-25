@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView android:fillViewport="true" style="@style/MatchWrap">
+        <LinearLayout style="@style/MatchWrap.Vertical">
+            <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnIdentity" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx3" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="姓名" style="@style/normal_tx_theme" />
+                <ImageView android:id="@id/icon3" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/edName" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/icon3" android:layout_toRightOf="@id/tx3" android:layout_centerVertical="true" style="@style/normal_edt_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnSex" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx03" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="性别" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvSex" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/tx03" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnNumber" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/txNumber" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="身份证号" style="@style/normal_tx_theme" />
+                <ImageView android:id="@id/iconNumber" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/edNumber" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:digits="0123456789X" android:layout_toLeftOf="@id/iconNumber" android:layout_toRightOf="@id/txNumber" android:layout_centerVertical="true" style="@style/normal_edt_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx04" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="手机号" style="@style/normal_tx_theme" />
+                <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/edPhone" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x35" android:singleLine="true" android:layout_toRightOf="@id/tx04" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="phone" style="@style/normal_edt_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnCulture" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="文化程度" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvCulture" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <LinearLayout android:id="@id/lltOne" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnIndustry" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/industry" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="从事产业" style="@style/normal_tx_theme" />
+                    <ImageView android:id="@id/iconIndustry" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvIndustry" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/iconIndustry" android:layout_toRightOf="@id/industry" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnLocation" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/location" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="产业所在地" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvLocation" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/location" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/scale" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="产业规模" style="@style/normal_tx_theme" />
+                    <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etScale" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x35" android:singleLine="true" android:layout_toRightOf="@id/scale" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:inputType="number" style="@style/normal_edt_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnUnit" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="规模单位" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvUnit" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnType" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/txT" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="人员类别" style="@style/normal_tx_theme" />
+                    <ImageView android:id="@id/iconT" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvType" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/iconT" android:layout_toRightOf="@id/txT" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/lltTwo" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnCraft" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/craft" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="从事工种" style="@style/normal_tx_theme" />
+                    <ImageView android:id="@id/iconCraft" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvCraft" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/iconCraft" android:layout_toRightOf="@id/craft" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnAddress" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/txAddr" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="工作所在地" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvAddress" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/txAddr" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnYear" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/txY" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="从业年限" style="@style/normal_tx_theme" />
+                    <TextView android:gravity="center_vertical" android:id="@id/txr" android:paddingTop="@dimen/edt_padding_small" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/edt_padding_small" android:text="年" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etYear" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:singleLine="true" android:layout_toLeftOf="@id/txr" android:layout_toRightOf="@id/txY" android:layout_centerVertical="true" android:inputType="number" style="@style/normal_edt_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnUnitType" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="单位类别" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvUnitType" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_large" android:gravity="center" android:id="@id/btnSure" android:background="@drawable/btn_theme" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x20" android:layout_marginRight="@dimen/regular_dimen_x20" android:layout_marginBottom="@dimen/regular_dimen_x20" android:text="确认无误，提交申请" android:layout_alignParentBottom="true" style="@style/normal_btn_theme" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

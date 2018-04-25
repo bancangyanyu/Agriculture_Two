@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lv="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/cell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x2" android:layout_marginTop="@dimen/regular_dimen_x1" android:layout_marginRight="@dimen/regular_dimen_x2" android:layout_marginBottom="@dimen/regular_dimen_x1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/tx_day" style="@style/normal_tx_theme" />
+            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tx_data" style="@style/normal_tx_theme" />
+        </LinearLayout>
+        <com.ureading.sunongtong.views.widget.LabelView android:layout_gravity="right" android:id="@id/tvLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" lv:lv_text="0" lv:lv_text_size="8.0sp" lv:lv_text_bold="false" lv:lv_background_color="#ffe9423f" lv:lv_min_size="20.0dip" lv:lv_padding="@dimen/regular_dimen_x2" lv:lv_gravity="TOP_RIGHT" lv:lv_fill_triangle="true" />
+    </FrameLayout>
+</LinearLayout>

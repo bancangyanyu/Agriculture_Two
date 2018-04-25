@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout style="@style/MatchMatch">
+        <RelativeLayout style="@style/MatchMatch">
+            <WebView android:id="@id/web" android:layout_above="@id/btnSure" style="@style/MatchMatch" />
+            <TextView android:textSize="@dimen/font_large" android:gravity="center" android:id="@id/btnSure" android:background="@drawable/btn_theme" android:visibility="gone" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginRight="@dimen/regular_dimen_x20" android:layout_marginBottom="@dimen/regular_dimen_x10" android:text="我已详细阅读相关申明" android:layout_alignParentBottom="true" style="@style/normal_btn_theme" />
+        </RelativeLayout>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/mEmptyLayout" style="@style/MatchMatch" />
+    </RelativeLayout>
+</LinearLayout>

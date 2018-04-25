@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView style="@style/MatchMatch">
+        <LinearLayout style="@style/MatchWrap.Vertical">
+            <View android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/normal_line_vertical" />
+            <LinearLayout android:id="@id/lltType" style="@style/MatchWrap.Vertical">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnType" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="选择类型" style="@style/normal_tx_theme" />
+                    <TextView android:gravity="center|right" android:id="@id/tvType" android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+                </LinearLayout>
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <View style="@style/normal_line_vertical" />
+            </LinearLayout>
+            <EditText android:gravity="top" android:id="@id/etContent" android:background="@android:color/white" android:padding="@dimen/regular_dimen_x15" android:layout_height="180.0dip" android:hint="请输入内容(600字以内)" android:singleLine="false" android:maxLength="600" style="@style/normal_edt_theme" />
+            <View style="@style/normal_line_vertical" />
+            <LinearLayout android:id="@id/lltAddress" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnAddress" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:textColorHint="@color/normal_text_color" android:gravity="center_vertical" android:id="@id/tvAddress" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/edt_padding_small" android:hint="点击定位地址" android:drawableLeft="@mipmap/icon_address" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <View style="@style/normal_line_vertical" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_small" android:id="@id/txDelete" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:visibility="gone" android:text="发布的信息可在列表中长按删除或撤销" style="@style/normal_tx_theme.Match" />
+            <LinearLayout android:id="@id/lltIV" style="@style/MatchWrap.Vertical">
+                <TextView android:textSize="@dimen/font_small" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:text="上传图片或15秒微视频 (最多9张图片)" style="@style/normal_tx_theme.Match" />
+                <TextView android:textSize="@dimen/font_small" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:text="发布的信息可在列表中长按删除或撤销" style="@style/normal_tx_theme.Match" />
+                <LinearLayout android:id="@id/lltMenu" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                    <TextView android:gravity="center_horizontal" android:id="@id/btnImg" android:text="图片" android:drawableTop="@drawable/btn_photo" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+                    <TextView android:gravity="center_horizontal" android:id="@id/btnVideo" android:layout_marginLeft="@dimen/regular_dimen_x10" android:text="视频" android:drawableTop="@drawable/btn_video" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvImg" android:visibility="gone" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x15" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x8" android:verticalSpacing="@dimen/regular_dimen_x8" android:numColumns="3" style="@style/MatchWrap" />
+                <FrameLayout android:id="@id/fltVideo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x15">
+                    <ImageView android:id="@id/ivVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="center" android:id="@id/btnStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_white" android:scaleType="centerCrop" />
+                </FrameLayout>
+            </LinearLayout>
+            <Button android:id="@id/btnSubmit" android:background="@drawable/btn_login" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x20" android:layout_marginRight="@dimen/regular_dimen_x15" android:layout_marginBottom="@dimen/regular_dimen_x20" android:text="@string/user_btn_submit" style="@style/normal_btn_theme" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

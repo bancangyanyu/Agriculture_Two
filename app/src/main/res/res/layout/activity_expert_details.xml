@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout style="@style/MatchMatch">
+            <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_marginTop="@dimen/regular_dimen_x3" android:fillViewport="true" android:layout_above="@id/llt" style="@style/MatchMatch">
+                <LinearLayout style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap">
+                        <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+                        <LinearLayout android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivHead" android:layout_centerVertical="true" style="@style/MatchWrap.Vertical">
+                            <TextView android:id="@id/tvName" style="@style/normal_tx_theme" />
+                            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvCount" android:layout_marginTop="@dimen/regular_dimen_x2" android:text="@string/expert_count_tx" style="@style/normal_tx_theme" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/white" android:id="@id/tvLabel" android:background="@drawable/bg_label_hot" android:layout_marginTop="@dimen/regular_dimen_x2" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="#ff2997d7" android:id="@id/tvIdentity" android:background="@drawable/bg_label_blue2" android:layout_marginTop="@dimen/regular_dimen_x2" android:layout_marginRight="@dimen/regular_dimen_x5" android:layout_toLeftOf="@id/tvLabel" style="@style/normal_tx_theme" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:background="@android:color/white" style="@style/MatchWrap.Vertical">
+                        <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:text="专家介绍" android:drawableLeft="@mipmap/icon_expert_01" android:drawablePadding="10.0dip" style="@style/normal_tx_theme.Match" />
+                        <View style="@style/normal_line_vertical" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/gray_text_color" android:id="@id/tvJob" android:layout_marginLeft="@dimen/regular_dimen_x40" android:layout_marginTop="@dimen/regular_dimen_x10" android:text="@string/expert_title_tx" style="@style/normal_tx_theme.Match" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/gray_text_color" android:id="@id/tvUnit" android:layout_marginLeft="@dimen/regular_dimen_x40" android:layout_marginTop="@dimen/regular_dimen_x10" android:text="@string/expert_unit_tx" style="@style/normal_tx_theme.Match" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/gray_text_color" android:id="@id/tvEmail" android:layout_marginLeft="@dimen/regular_dimen_x40" android:layout_marginTop="@dimen/regular_dimen_x10" android:text="@string/expert_email_tx" style="@style/normal_tx_theme.Match" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/gray_text_color" android:id="@id/tvMajor" android:layout_marginLeft="@dimen/regular_dimen_x40" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginBottom="10.0dip" android:text="@string/expert_major_tx" style="@style/normal_tx_theme.Match" />
+                        <View style="@style/normal_line_vertical" />
+                    </LinearLayout>
+                    <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+                        <RelativeLayout android:id="@id/btnInfo" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+                            <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="履历介绍" android:drawableLeft="@mipmap/icon_expert_02" android:drawablePadding="10.0dip" style="@style/normal_tx_theme.Match" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View style="@style/normal_line_vertical" />
+                    </LinearLayout>
+                    <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                        <RelativeLayout android:id="@id/btnDaYi" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+                            <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="专家答疑" android:drawableLeft="@mipmap/icon_expert_03" android:drawablePadding="10.0dip" style="@style/normal_tx_theme.Match" />
+                            <TextView android:textColor="@color/gray_text_color" android:gravity="center" android:paddingRight="@dimen/regular_dimen_x15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多>>" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View style="@style/normal_line_vertical" />
+                        <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvDaYi" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchWrap" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:id="@id/llt" android:background="@android:color/white" android:padding="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x5" android:layout_alignParentBottom="true" style="@style/MatchWrap.Horizontal">
+                <Button android:id="@id/btnPublish" android:background="@drawable/btn_theme" android:text="咨询专家" style="@style/normal_btn_theme" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

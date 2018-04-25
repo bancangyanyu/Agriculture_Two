@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <TextView android:id="@id/txAddressInfo" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:visibility="gone" style="@style/normal_tx_theme.Match" />
+    <FrameLayout style="@style/MatchMatch">
+        <LinearLayout style="@style/MatchWrap.Vertical">
+            <ListView android:id="@id/lvBase" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x3" android:listSelector="@android:color/transparent" android:foreground="?selectableItemBackground" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchWrap" />
+            <LinearLayout android:id="@id/lltLevel" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnTime" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/time" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="认定时间" style="@style/normal_tx_theme" />
+                    <ImageView android:id="@id/iconTime" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvTime" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/iconTime" android:layout_toRightOf="@id/time" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnDep" android:background="@android:color/white" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/dep" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="认定部门" style="@style/normal_tx_theme" />
+                    <ImageView android:id="@id/iconDep" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/edDep" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/iconDep" android:layout_toRightOf="@id/dep" android:layout_centerVertical="true" style="@style/normal_edt_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/lltInfo" android:background="@color/bg_background" android:visibility="gone" style="@style/MatchMatch.Vertical">
+            <LinearLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Vertical">
+                <TextView android:paddingTop="10.0dip" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x5" android:text="请输入种养规模" style="@style/normal_tx_theme.Match" />
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" style="@style/MatchWrap.Horizontal">
+                    <EditText android:gravity="center" android:id="@id/et1" android:background="@drawable/bg_input_gray" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" android:maxLength="10" android:digits="\ 1234567890" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme.Wrap" />
+                    <TextView android:text="  ~  " style="@style/normal_tx_theme" />
+                    <EditText android:gravity="center" android:id="@id/et2" android:background="@drawable/bg_input_gray" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" android:maxLength="10" android:digits="\ 1234567890" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme.Wrap" />
+                    <TextView android:gravity="center" android:id="@id/tvUnit" android:layout_weight="1.0" style="@style/normal_edt_theme.Wrap" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

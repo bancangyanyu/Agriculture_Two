@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <View android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/normal_line_vertical" />
+    <RelativeLayout style="@style/MatchMatch"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <GridView android:id="@id/gvVideo" android:background="@color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:scrollbars="none" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x10" android:verticalSpacing="@dimen/regular_dimen_x10" android:numColumns="2" style="@style/MatchWrap" />
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

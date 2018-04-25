@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout style="@style/MatchMatch"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x3">
+                <LinearLayout android:orientation="vertical" android:id="@id/lltFirst" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout style="@style/MatchWrap.Vertical">
+                        <View style="@style/normal_line_vertical" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ffe85a00" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:text="首席专家" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme.Match" />
+                        <View style="@style/normal_line_vertical" />
+                        <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvFirst" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchWrap" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lltJobs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x5">
+                    <LinearLayout style="@style/MatchWrap.Vertical">
+                        <View style="@style/normal_line_vertical" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff00a528" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:text="岗位专家" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme.Match" />
+                        <View style="@style/normal_line_vertical" />
+                        <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvJobs" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchWrap" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lltBase" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x5">
+                    <LinearLayout style="@style/MatchWrap.Vertical">
+                        <View style="@style/normal_line_vertical" />
+                        <TextView android:textSize="17.0sp" android:textColor="#ff2790da" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:text="基地主任" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme.Match" />
+                        <View style="@style/normal_line_vertical" />
+                        <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvBase" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchWrap" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

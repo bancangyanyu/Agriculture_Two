@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_line" android:layout_marginLeft="70.0dip" style="@style/horizontal_light_thin_divider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:minHeight="71.0dip">
+        <FrameLayout android:id="@id/portrait_panel" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center_vertical" android:id="@id/img_head" android:layout_width="@dimen/avatar_size_default" android:layout_height="@dimen/avatar_size_default" android:layout_marginLeft="10.0dip" android:layout_marginRight="12.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_black_333333" android:ellipsize="end" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="6.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/portrait_panel" />
+        <ImageView android:id="@id/img_msg_status" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_toRightOf="@id/portrait_panel" android:layout_below="@id/tv_nickname" android:contentDescription="@string/empty" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_aaaaaa_content_text" android:ellipsize="end" android:autoLink="none" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="40.0dip" android:lines="1" android:scrollHorizontally="true" android:layout_toRightOf="@id/img_msg_status" android:layout_below="@id/tv_nickname" />
+        <TextView android:textSize="@dimen/text_small_size_ten_sp" android:textColor="@color/color_aaaaaa_content_text" android:id="@id/tv_date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <com.netease.nim.uikit.common.ui.drop.DropFake android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/unread_number_tip" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_below="@id/tv_nickname" android:layout_alignParentRight="true" />
+        <ImageView android:gravity="center" android:id="@id/unread_number_explosion" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="6.0dip" android:layout_below="@id/tv_nickname" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/bottom_line" android:layout_marginLeft="70.0dip" style="@style/horizontal_light_thin_divider" />
+</LinearLayout>

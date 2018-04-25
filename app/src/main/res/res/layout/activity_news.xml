@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <View android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/normal_line_vertical" />
+    <include layout="@layout/base_list_layout" />
+</LinearLayout>

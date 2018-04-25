@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/normal_line_vertical" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@id/tvName" style="@style/normal_tx_theme.Match" />
+        <RelativeLayout android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchWrap">
+            <TextView android:textSize="13.0sp" android:id="@id/tvTime" style="@style/normal_tx_theme" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/theme_color" android:id="@id/tvMsg" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

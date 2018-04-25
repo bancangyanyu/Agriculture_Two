@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/MatchMatch"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/lvBase" android:listSelector="@android:color/transparent" android:foreground="?selectableItemBackground" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchAuto" />
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/ivPublish" android:background="@drawable/round_theme" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginBottom="@dimen/regular_dimen_x40" android:layout_alignBottom="@id/refresh" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+</LinearLayout>

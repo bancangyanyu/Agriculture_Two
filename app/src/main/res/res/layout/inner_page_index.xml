@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchMatch"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh" style="@style/MatchMatch">
+        <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:overScrollMode="never" style="@style/MatchMatch">
+            <LinearLayout style="@style/MatchWrap.Vertical">
+                <LinearLayout style="@style/MatchWrap">
+                    <include layout="@layout/partial_home_header" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lltTianqi" android:background="@color/theme_color" android:paddingTop="@dimen/regular_dimen_x3" android:paddingBottom="@dimen/regular_dimen_x3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvTime" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/tvAddress" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+                    <LinearLayout android:gravity="center" android:layout_weight="1.0" style="@style/WrapWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_large" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tvDu" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_weight="1.0" style="@style/WrapWrap.Horizontal">
+                        <TextView android:textColor="@android:color/white" android:id="@id/tvTiqi" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                </LinearLayout>
+                <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvMenu" android:background="@color/bg_background" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/line_width" android:verticalSpacing="@dimen/line_width" android:numColumns="3" style="@style/MatchWrap" />
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout style="@style/MatchWrap">
+                        <TextView android:textSize="@dimen/font_index_title" android:textColor="#ffe85a00" android:paddingLeft="@dimen/regular_dimen_x15" android:text="头条" android:drawableLeft="@mipmap/icon_file" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/btnMoreTop" android:padding="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x5" android:text="更多>>" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvNews" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:divider="@null" style="@style/MatchWrap" />
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+                <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout style="@style/MatchWrap">
+                        <TextView android:textSize="@dimen/font_index_title" android:textColor="#ff00a528" android:paddingLeft="@dimen/regular_dimen_x15" android:text="动态" android:drawableLeft="@mipmap/icon_dynamic" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/btnMoreDynamic" android:padding="@dimen/edt_padding_small" android:visibility="visible" android:layout_marginRight="@dimen/regular_dimen_x5" android:text="更多>>" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" style="@style/MatchWrap.Horizontal">
+                        <ImageView android:layout_marginLeft="@dimen/regular_dimen_x15" android:src="@mipmap/icon_circle_green" style="@style/WrapWrap" />
+                        <sumimakito.android.advtextswitcher.AdvTextSwitcher android:id="@id/advTextSwitcher" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" app:textSize="@dimen/font_medium" app:gravity="left" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+                <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" android:layout_marginBottom="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout style="@style/MatchWrap">
+                        <TextView android:textSize="@dimen/font_index_title" android:textColor="#ff2790da" android:paddingLeft="@dimen/regular_dimen_x15" android:text="视频" android:drawableLeft="@mipmap/icon_play" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/btnMoreVideo" android:padding="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x5" android:text="更多>>" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvVideo" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x10" android:verticalSpacing="@dimen/regular_dimen_x10" android:numColumns="2" style="@style/MatchWrap" />
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

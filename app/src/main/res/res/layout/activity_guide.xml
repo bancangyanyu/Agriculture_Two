@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"> >
+<android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:id="@id/lltPoints" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/regular_dimen_x40" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_guide_point" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_marginRight="@dimen/regular_dimen_x10" android:src="@drawable/ic_guide_point" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_guide_point" />
+    </LinearLayout>
+    <Button android:textColor="@android:color/white" android:id="@id/btnInto" android:background="@drawable/btn_theme" android:visibility="visible" android:layout_marginLeft="100.0dip" android:layout_marginRight="100.0dip" android:layout_marginBottom="@dimen/regular_dimen_x40" android:text="立即体验" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/normal_btn_theme" />
+</RelativeLayout>

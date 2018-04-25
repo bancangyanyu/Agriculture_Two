@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/MatchMatch"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh" style="@style/MatchMatch">
+        <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:overScrollMode="never" style="@style/MatchAuto">
+            <LinearLayout style="@style/MatchWrap.Vertical">
+                <include android:id="@id/includeOnline" layout="@layout/gv_video_header" />
+                <ImageView android:id="@id/btnDisplay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x3" android:src="@drawable/bg_normal" />
+                <LinearLayout android:id="@id/lltVideo" android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" android:layout_marginBottom="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                    <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvVideo" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x10" android:verticalSpacing="@dimen/regular_dimen_x10" android:numColumns="2" style="@style/MatchWrap" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

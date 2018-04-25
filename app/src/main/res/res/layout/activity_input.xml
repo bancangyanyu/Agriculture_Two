@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <View android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/normal_line_vertical" />
+    <EditText android:id="@id/tvInput" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/normal_edt_theme" />
+    <EditText android:gravity="top" android:id="@id/edContent" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:visibility="gone" android:layout_height="180.0dip" android:hint="请输入培训经验" android:maxLength="60" style="@style/normal_edt_theme" />
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/MatchWrap">
+        <ImageView android:id="@id/ivIcon" android:src="@drawable/bg_normal" style="@style/MatchWrap" />
+        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/tvCount" android:background="#90000000" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x10" android:visibility="gone" android:layout_margin="@dimen/regular_dimen_x2" android:drawableLeft="@mipmap/icon_play_white" android:drawablePadding="@dimen/regular_dimen_x3" android:layout_alignBottom="@id/ivIcon" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/font_small" android:ellipsize="end" android:id="@id/tvName" android:layout_marginTop="@dimen/regular_dimen_x5" android:lines="2" style="@style/normal_tx_theme" />
+</LinearLayout>

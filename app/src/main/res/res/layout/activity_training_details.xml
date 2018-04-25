@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout style="@style/MatchMatch">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout style="@style/MatchWrap.Vertical">
+                <include layout="@layout/list_training_item" />
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnBook" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="通讯录" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvBook" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnCourse" android:background="@android:color/white" style="@style/MatchWrap">
+                    <ImageView android:background="#ffed7230" android:visibility="visible" android:layout_width="@dimen/regular_dimen_x3" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginBottom="@dimen/regular_dimen_x10" android:layout_alignTop="@id/tvCourseTag" android:layout_alignBottom="@id/tvCourseTag" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/tvCourseTag" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_marginLeft="@dimen/regular_dimen_x15" android:text="课程表" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvCourse" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_centerVertical="true" style="@style/normal_tx_theme.Match" />
+                </RelativeLayout>
+                <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvCourse" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" style="@style/MatchWrap" />
+                <View style="@style/normal_line_vertical" />
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnTeacher" android:background="@android:color/white" style="@style/MatchWrap">
+                    <ImageView android:background="#ffed7230" android:visibility="visible" android:layout_width="@dimen/regular_dimen_x3" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginBottom="@dimen/regular_dimen_x10" android:layout_alignTop="@id/tvTeacherTag" android:layout_alignBottom="@id/tvTeacherTag" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/tvTeacherTag" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_marginLeft="@dimen/regular_dimen_x15" android:text="培训老师" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvTeacher" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_centerVertical="true" style="@style/normal_tx_theme.Match" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvTeacher" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x5" android:numColumns="4" android:divider="@android:color/transparent" style="@style/MatchWrap" />
+                <View style="@style/normal_line_vertical" />
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnMaterial" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="培训教材" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/btnBase" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="培训基地" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                </LinearLayout>
+                <View android:layout_marginBottom="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            </LinearLayout>
+        </ScrollView>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

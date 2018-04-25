@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/btnProfile" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchWrap">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <FrameLayout android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivHead" android:layout_centerVertical="true" style="@style/MatchWrap">
+                <LinearLayout android:gravity="center_vertical" style="@style/MatchWrap.Horizontal">
+                    <LinearLayout android:id="@id/lltInfo" android:visibility="visible" style="@style/WrapWrap.Vertical">
+                        <TextView android:id="@id/tvName" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:id="@id/tvIdentity" android:layout_marginTop="@dimen/regular_dimen_x2" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center|right" style="@style/MatchWrap.Horizontal">
+                        <ImageView android:id="@id/ivRight" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/WrapWrap" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textColor="@color/gray_text_color" android:layout_gravity="center_vertical" android:id="@id/txInfo" android:background="@android:color/white" android:paddingTop="@dimen/text_size_10" android:paddingBottom="@dimen/text_size_10" android:visibility="visible" android:text="点击头像登录" style="@style/normal_tx_theme.Match" />
+            </FrameLayout>
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+        <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+            <LinearLayout android:gravity="center" android:background="@android:color/white" style="@style/AutoWrap">
+                <TextView android:gravity="center" android:id="@id/btnCollect" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的收藏" android:drawableLeft="@mipmap/icon_personal_01" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width_2x" style="@style/AutoWrap">
+                <TextView android:gravity="center" android:id="@id/txIntegral" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="0积分" android:drawableLeft="@mipmap/icon_personal_02" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:background="@android:color/white" android:layout_marginLeft="@dimen/line_width_2x" style="@style/AutoWrap">
+                <TextView android:gravity="center" android:id="@id/btnMall" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="积分商城" android:drawableLeft="@mipmap/icon_personal_03" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+            <TextView android:gravity="center_vertical" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="每日签到" android:drawableLeft="@mipmap/icon_personal_04" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            <TextView android:textColor="@color/gray_text_color" android:gravity="right" android:id="@id/txCount" android:layout_width="fill_parent" android:text="已连续签到0天" style="@style/normal_tx_theme" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btnSystem" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+            <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="系统设置" android:drawableLeft="@mipmap/icon_personal_05" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btnFeedback" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+            <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="意见反馈" android:drawableLeft="@mipmap/ic_feedback" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btnShare" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+            <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="分享农技耘" android:drawableLeft="@mipmap/ic_share" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/btnQR" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+            <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的二维码" android:drawableLeft="@mipmap/icon_personal_10" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+            <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Vertical">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/btnMyQuestion" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的提问" android:drawableLeft="@mipmap/icon_personal_06" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+                <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/btnAnswer" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的回答" android:drawableLeft="@mipmap/icon_personal_07" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+                <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/btnExchange" android:background="@android:color/white" android:visibility="visible" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x16" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的交流" android:drawableLeft="@mipmap/icon_communication" android:drawablePadding="@dimen/regular_dimen_x6" style="@style/normal_tx_theme" />
+                <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/btnAttention" android:background="@android:color/white" android:visibility="visible" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x16" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的关注" android:drawableLeft="@mipmap/icon_communication" android:drawablePadding="@dimen/regular_dimen_x6" style="@style/normal_tx_theme" />
+                <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/btnTraining" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x16" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的培训班" android:drawableLeft="@mipmap/icon_communication" android:drawablePadding="@dimen/regular_dimen_x6" style="@style/normal_tx_theme" />
+                    <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/btnApplyFor" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x16" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="新型职业农名申请" android:drawableLeft="@mipmap/icon_communication" android:drawablePadding="@dimen/regular_dimen_x6" style="@style/normal_tx_theme" />
+                    <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/btnOne" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                    <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="我的一对一" android:drawableLeft="@mipmap/icon_personal_09" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+                    <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:id="@id/btnCheck" android:visibility="visible" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+            <View style="@style/normal_line_vertical" />
+            <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="推广日志" android:drawableLeft="@mipmap/icon_personal_08" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+                <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

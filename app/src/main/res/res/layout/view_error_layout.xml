@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_error" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_error_layout" android:background="@mipmap/icon_network" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <net.qiujuer.genius.ui.widget.Loading android:id="@id/animProgress" android:layout_width="26.0dip" android:layout_height="26.0dip" app:gForegroundColor="?colorPrimary" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="#ff7e7e7e" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_error_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/error_view_loading" android:lines="2" />
+</LinearLayout>

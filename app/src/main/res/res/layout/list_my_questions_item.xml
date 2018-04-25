@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/normal_line_vertical" />
+    <LinearLayout android:paddingTop="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/tvContent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/normal_tx_theme" />
+        <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvImg" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="5.0dip" android:layout_marginTop="@dimen/regular_dimen_x10" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x8" android:numColumns="3" style="@style/MatchWrap" />
+        <FrameLayout android:id="@id/fltVideo" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/ivVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+            <ImageView android:layout_gravity="center" android:id="@id/btnStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_white" />
+        </FrameLayout>
+        <View android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x5" android:layout_marginRight="@dimen/regular_dimen_x10" style="@style/normal_line_vertical" />
+        <RelativeLayout style="@style/MatchWrap">
+            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvTime" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/gray_text_color" android:id="@id/btnDelete" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x5" android:text="删除" android:layout_toRightOf="@id/tvTime" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            <TextView android:textSize="@dimen/font_small" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvCollect" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x5" android:visibility="gone" android:drawableLeft="@mipmap/icon_collection" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_toLeftOf="@id/tvMsg" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvMsg" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

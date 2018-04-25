@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh" style="@style/MatchMatch"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:overScrollMode="never" style="@style/MatchMatch">
+            <LinearLayout style="@style/MatchMatch.Vertical">
+                <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout style="@style/MatchWrap">
+                        <TextView android:textSize="17.0sp" android:paddingLeft="@dimen/regular_dimen_x15" android:text="农资精选" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/btnBrandMore" android:padding="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x5" android:text="更多>>" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvBrand" android:background="@android:color/white" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x10" android:verticalSpacing="@dimen/regular_dimen_x10" android:numColumns="2" style="@style/MatchWrap" />
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+                <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout style="@style/MatchWrap">
+                        <TextView android:textSize="17.0sp" android:paddingLeft="@dimen/regular_dimen_x15" android:text="企业推荐" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/btnQYMore" android:padding="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x5" android:text="更多>>" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvCompany" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchWrap" />
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

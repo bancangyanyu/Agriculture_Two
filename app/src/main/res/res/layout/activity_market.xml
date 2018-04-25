@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <View android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/normal_line_vertical" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/btnMaker" android:tag="" android:background="@android:color/white" android:layout_marginBottom="@dimen/regular_dimen_x5" style="@style/MatchWrap.Horizontal">
+        <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="江苏省农产品价格信息" android:drawableLeft="@mipmap/icon_price" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/showView" android:paddingRight="@dimen/regular_dimen_x10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textColor="#ffffbb33" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" />
+                <ImageView android:background="@drawable/ic_keyboard_arrow_right_yellow_30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MatchWrap" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/hideView" android:paddingRight="@dimen/regular_dimen_x10" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <TextView android:textColor="#ffffbb33" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详情" />
+                <ImageView android:background="@drawable/ic_keyboard_arrow_right_yellow_30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MatchWrap" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.ureading.sunongtong.views.widget.PagerSlidingTabStrip android:id="@id/tabs" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:slidingBlock="@drawable/sliding_block_bg" app:allowWidthFull="true" />
+    <View style="@style/normal_line_vertical" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" style="@style/MatchMatch" />
+</LinearLayout>

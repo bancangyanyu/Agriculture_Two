@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btnVideo" android:tag="" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/img_direct_seeding" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/font_small" android:textColor="@android:color/white" android:gravity="right" android:background="#20717171" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x5" android:text="视频直播入口 >>" android:layout_alignBottom="@id/btnVideo" style="@style/normal_tx_theme.Match" />
+</RelativeLayout>

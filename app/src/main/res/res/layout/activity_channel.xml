@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView android:paddingTop="@dimen/regular_dimen_x3" style="@style/MatchMatch">
+        <LinearLayout android:id="@id/subscribe_main_layout" style="@style/MatchWrap.Vertical">
+            <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                <TextView android:textSize="17.0sp" android:textColor="#ff00a528" android:id="@id/my_category_text" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="已显示" style="@style/normal_tx_theme" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/my_category_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x12" android:text="长按拖拽进行排序" android:drawableLeft="@mipmap/icon_press" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <com.ureading.sunongtong.views.widget.DragGrid android:gravity="center" android:id="@id/gvSHow" android:background="@color/line_color" android:scrollbars="vertical" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/line_width" android:verticalSpacing="@dimen/line_width" android:stretchMode="columnWidth" android:numColumns="4" style="@style/MatchWrap" />
+            <View style="@style/normal_line_vertical" />
+            <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                <TextView android:textSize="17.0sp" android:textColor="#ffe85a00" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="扩展" style="@style/normal_tx_theme" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击添加到“已显示”" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <com.ureading.sunongtong.views.widget.ScrollGridView android:gravity="center" android:id="@id/gvMore" android:background="@color/line_color" android:scrollbars="vertical" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/line_width" android:verticalSpacing="@dimen/line_width" android:stretchMode="columnWidth" android:numColumns="4" style="@style/MatchWrap" />
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

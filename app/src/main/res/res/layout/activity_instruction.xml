@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout style="@style/MatchMatch">
+        <ScrollView android:fillViewport="true" android:layout_above="@id/btnSure" style="@style/MatchMatch">
+            <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchMatch.Vertical">
+                <TextView android:textSize="@dimen/font_large" android:gravity="center" android:paddingTop="@dimen/regular_dimen_x20" android:paddingBottom="@dimen/regular_dimen_x20" android:text="申报填写说明" style="@style/normal_tx_theme.Match" />
+                <TextView android:text="@string/label_declaration_statement" style="@style/normal_tx_theme.Match" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textSize="@dimen/font_large" android:gravity="center" android:id="@id/btnSure" android:background="@drawable/btn_theme" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginRight="@dimen/regular_dimen_x20" android:layout_marginBottom="@dimen/regular_dimen_x10" android:text="我已详细阅读相关说明" android:layout_alignParentBottom="true" style="@style/normal_btn_theme" />
+    </RelativeLayout>
+</LinearLayout>

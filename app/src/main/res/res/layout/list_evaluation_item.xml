@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@color/white" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x10" android:layout_marginBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+        <RelativeLayout android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/theme_color" android:id="@id/tvTitle01" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ffe27142" android:id="@id/tvTag01" android:text="请打分" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+        <TextView android:id="@id/tvTitle02" android:layout_marginTop="@dimen/regular_dimen_x8" android:text="科学种植 任宝忠" style="@style/normal_tx_theme.Match" />
+        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvTag02" android:layout_marginTop="@dimen/regular_dimen_x5" android:text="对课程内容和教师教学效果打分" style="@style/normal_tx_theme.Match" />
+        <RatingBar android:id="@id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x10" android:maxHeight="@dimen/regular_dimen_x35" android:minHeight="@dimen/regular_dimen_x35" android:rating="0.0" android:stepSize="1.0" style="@style/evaluationRatingBar" />
+        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:gravity="center" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x8" android:text="滑动星星打分" style="@style/normal_tx_theme.Match" />
+        <TextView android:textSize="@dimen/font_large" android:gravity="center" android:id="@id/btnSubmit" android:background="@drawable/btn_theme" android:layout_marginLeft="@dimen/regular_dimen_x20" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginRight="@dimen/regular_dimen_x20" android:layout_marginBottom="@dimen/regular_dimen_x10" android:text="提交" android:layout_alignParentBottom="true" style="@style/normal_btn_theme" />
+    </LinearLayout>
+</LinearLayout>

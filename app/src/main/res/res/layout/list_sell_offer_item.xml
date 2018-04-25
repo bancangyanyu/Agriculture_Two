@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:padding="@dimen/regular_dimen_x15" style="@style/MatchWrap.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/MatchWrap.Horizontal">
+        <ImageView android:id="@id/ivCover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/regular_dimen_x10" android:src="@drawable/bg_normal" android:scaleType="centerCrop" />
+        <LinearLayout style="@style/MatchWrap.Vertical">
+            <LinearLayout android:gravity="bottom" style="@style/MatchWrap.Horizontal">
+                <TextView android:id="@id/tvName" android:layout_width="0.0dip" android:layout_marginRight="@dimen/regular_dimen_x10" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+                <FrameLayout style="@style/WrapWrap">
+                    <TextView android:textColor="#fffc5406" android:layout_gravity="center|right" android:id="@id/tvPrice" android:visibility="gone" android:text="1000元／公斤" style="@style/normal_tx_theme" />
+                    <TextView android:textColor="@color/white" android:layout_gravity="center|right" android:id="@id/tvFinish" android:background="@drawable/bg_label_hot" android:text="已售完" style="@style/normal_tx_theme" />
+                </FrameLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/gray_text_color" android:id="@id/tvContent" android:paddingBottom="@dimen/regular_dimen_x5" android:maxLines="3" style="@style/normal_tx_theme" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/small_text_size" android:layout_marginTop="@dimen/regular_dimen_x5">
+        <TextView android:textSize="@dimen/text_size_13" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvAddress" android:text="南京市宣武区" android:lines="1" android:drawableLeft="@mipmap/icon_address" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_toLeftOf="@id/tvTime" android:layout_alignParentLeft="true" style="@style/normal_tx_theme" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/gray_text_color" android:id="@id/tvTime" android:text="2017-08-09" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+    </RelativeLayout>
+</LinearLayout>

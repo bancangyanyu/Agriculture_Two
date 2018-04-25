@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:drawableTop="@drawable/btn_index"
+                android:gravity="center"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rg_nav"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/rb"
+                style="@style/nav_item"
+                android:background="@null"
+                android:button="@null"
+                android:clickable="false"
+                android:drawableTop="@drawable/btn_index"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/rbThinkTank"
+                style="@style/nav_item"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_thinktank"
+                android:text="知识库"/>
+
+            <RadioButton
+                android:id="@+id/rbQuestions"
+                style="@style/nav_item"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_questions"
+                android:text="快速提问" />
+
+            <RadioButton
+                android:id="@+id/rbExchange"
+                style="@style/nav_item"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_exchange"
+                android:text="交流" />
+
+            <RadioButton
+                android:id="@+id/rbMe"
+                style="@style/nav_item"
+                android:background="@null"
+                android:drawableTop="@drawable/btn_me"
+                android:text="我的" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

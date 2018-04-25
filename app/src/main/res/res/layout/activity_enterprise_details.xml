@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_marginTop="@dimen/regular_dimen_x3" android:fillViewport="true" android:overScrollMode="never" style="@style/MatchMatch">
+        <LinearLayout style="@style/MatchWrap.Vertical">
+            <include layout="@layout/partial_home_header" />
+            <LinearLayout android:background="@android:color/white" style="@style/MatchMatch.Vertical">
+                <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+                    <TextView android:textSize="@dimen/font_large" android:id="@id/tvName" style="@style/normal_tx_theme.Match" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:weightSum="3.0" style="@style/MatchWrap.Horizontal">
+                    <com.ureading.sunongtong.views.widget.IconButton android:textSize="@dimen/font_medium" android:textColor="@color/theme_color" android:id="@id/btnPublish" android:background="@drawable/bg_label_white" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="联系客服" android:drawableLeft="@mipmap/icon_telephone" android:layout_weight="2.0" app:iconPadding="@dimen/regular_dimen_x5" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+                <TextView android:textSize="17.0sp" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="企业详情" style="@style/normal_tx_theme" />
+                <View style="@style/normal_line_vertical" />
+                <WebView android:id="@id/tvDetails" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/normal_tx_theme.Match" />
+                <View style="@style/normal_line_vertical" />
+                <View android:background="@color/bg_background" android:layout_height="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout style="@style/MatchWrap">
+                    <TextView android:textSize="17.0sp" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="农资推荐" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/btnBrandMore" android:padding="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x5" android:text="更多>>" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvBrand" android:background="@android:color/white" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x10" android:verticalSpacing="@dimen/regular_dimen_x10" android:numColumns="2" style="@style/MatchWrap" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

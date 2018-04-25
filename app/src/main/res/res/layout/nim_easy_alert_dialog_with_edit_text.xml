@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/easy_edit_dialog_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/nim_easy_alert_dialog_title" />
+    <TextView android:id="@id/easy_dialog_message_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/dialog_message_text_style" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_text_margin_horizontal" android:layout_marginRight="@dimen/dialog_text_margin_horizontal" android:layout_marginBottom="@dimen/dialog_padding_vertical">
+        <EditText android:textSize="@dimen/normal_text_size" android:textColor="@color/color_black_333333" android:gravity="bottom" android:id="@id/easy_alert_dialog_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:includeFontPadding="false" style="@style/easy_dialog_edit_text_style" />
+        <TextView android:textColor="@color/color_black_333333" android:id="@id/edit_text_length" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignRight="@id/easy_alert_dialog_edit_text" android:layout_alignBottom="@id/easy_alert_dialog_edit_text" />
+    </RelativeLayout>
+    <include layout="@layout/nim_easy_alert_dialog_bottom_button" />
+</LinearLayout>

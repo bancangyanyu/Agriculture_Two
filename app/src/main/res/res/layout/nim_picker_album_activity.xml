@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch.Vertical">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/picker_bottombar" android:layout_below="@id/app_bar_layout">
+            <FrameLayout android:id="@id/picker_album_fragment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/picker_photos_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/picker_bottombar" android:background="#ffe6e6e6" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <TextView android:enabled="false" android:textSize="14.0sp" android:textColor="@color/color_picker_preview_selector" android:gravity="center" android:id="@id/picker_bottombar_preview" android:background="@drawable/nim_picker_preview_btn_selector" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/picker_image_preview" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:enabled="false" android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/picker_bottombar_select" android:background="@drawable/btn_theme" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/picker_image_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

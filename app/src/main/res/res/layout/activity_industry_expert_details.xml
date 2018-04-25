@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" style="@style/MatchWrap">
+        <View style="@style/normal_line_vertical" />
+        <RelativeLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+            <LinearLayout android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivHead" android:layout_centerVertical="true" style="@style/MatchWrap.Vertical">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tvName" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/white" android:id="@id/tvLabel" android:background="@drawable/bg_label_hot" android:layout_marginTop="@dimen/regular_dimen_x2" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="#ff2997d7" android:id="@id/tvIdentity" android:background="@drawable/bg_label_blue2" android:layout_marginTop="@dimen/regular_dimen_x2" android:layout_marginRight="@dimen/regular_dimen_x5" android:layout_toLeftOf="@id/tvLabel" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvUnit" android:layout_marginTop="@dimen/regular_dimen_x2" android:lines="1" style="@style/normal_tx_theme.Match" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+    </LinearLayout>
+    <WebView android:id="@id/web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

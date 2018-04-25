@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/bg_background" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x3" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x3" style="@style/MatchWrap.Horizontal">
+        <TextView android:gravity="center" android:text="日" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+        <TextView android:gravity="center" android:text="一" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+        <TextView android:gravity="center" android:text="二" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+        <TextView android:gravity="center" android:text="三" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+        <TextView android:gravity="center" android:text="四" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+        <TextView android:gravity="center" android:text="五" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+        <TextView android:gravity="center" android:text="六" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+    </LinearLayout>
+    <View style="@style/normal_line_vertical" />
+    <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gv_calendar" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x4" android:paddingRight="@dimen/regular_dimen_x15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:stretchMode="columnWidth" android:numColumns="7" />
+</LinearLayout>

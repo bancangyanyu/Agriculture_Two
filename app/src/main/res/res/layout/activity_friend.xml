@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/regular_dimen_x3">
+        <ListView android:id="@id/contact_list_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="0.0dip" />
+        <ImageView android:id="@id/img_hit_letter" android:background="@drawable/nim_contact_hit_letter_bg" android:padding="40.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="" />
+        <TextView android:textSize="40.0dip" android:textColor="@color/white" android:id="@id/tv_hit_letter" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <com.netease.nim.uikit.common.ui.liv.LetterIndexView android:id="@id/liv_index" android:background="#00000000" android:layout_width="15.0dip" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginRight="@dimen/regular_dimen_x20" android:layout_marginBottom="50.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

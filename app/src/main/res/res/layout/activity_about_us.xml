@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <ImageView android:id="@id/ivQR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@mipmap/icon_512" />
+    <TextView android:id="@id/tvVer" android:layout_marginTop="@dimen/regular_dimen_x10" style="@style/normal_tx_theme" />
+</LinearLayout>

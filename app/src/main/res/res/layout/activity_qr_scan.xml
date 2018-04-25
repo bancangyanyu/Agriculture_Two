@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch.Vertical">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <SurfaceView android:id="@id/capture_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/capture_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/capture_mask_top" android:background="@mipmap/qr_scan_mask" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_alignParentTop="true" />
+            <RelativeLayout android:id="@id/capture_crop_view" android:background="@mipmap/qr_capture" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_below="@id/capture_mask_top" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/capture_scan_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="5.0dip" android:src="@mipmap/qr_scan_line" android:layout_alignParentTop="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/capture_mask_bottom" android:background="@mipmap/qr_scan_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/capture_crop_view" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@android:color/white" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/qr_scan_tips" android:layout_below="@id/capture_crop_view" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/capture_mask_left" android:background="@mipmap/qr_scan_mask" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/capture_crop_view" android:layout_above="@id/capture_mask_bottom" android:layout_below="@id/capture_mask_top" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/capture_mask_right" android:background="@mipmap/qr_scan_mask" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/capture_crop_view" android:layout_above="@id/capture_mask_bottom" android:layout_below="@id/capture_mask_top" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:background="#40ffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center" android:id="@id/capture_flash" android:tag="1" android:background="@mipmap/flash_default" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

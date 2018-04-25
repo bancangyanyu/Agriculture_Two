@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <SurfaceView android:id="@id/videoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <ImageView android:id="@id/switch_cameras" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nim_cameras_selector" android:contentDescription="@string/empty" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/recording_id" android:background="@drawable/nim_record_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/empty" />
+        <TextView android:textColor="@color/white" android:id="@id/record_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="00:00" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/record_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/empty" />
+</RelativeLayout>

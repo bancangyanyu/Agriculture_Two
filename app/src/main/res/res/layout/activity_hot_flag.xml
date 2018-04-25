@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/theme_color" android:paddingTop="@dimen/toolbar_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_toLeftOf="@id/btnMsg">
+            <EditText android:textSize="@dimen/font_small" android:id="@id/etSearch" android:background="@drawable/bg_input_white" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingTop="@dimen/regular_dimen_x8" android:paddingBottom="@dimen/regular_dimen_x8" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="@string/user_search_hint" android:drawableLeft="@mipmap/icon_search_black" android:drawablePadding="@dimen/regular_dimen_x5" android:inputType="textAutoComplete|textNoSuggestions" android:imeOptions="actionSearch" style="@style/normal_edt_theme" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout style="@style/MatchMatch">
+        <LinearLayout android:id="@id/lltContent" android:visibility="invisible" style="@style/MatchMatch.Vertical">
+            <com.ureading.sunongtong.views.widget.PagerSlidingTabStrip android:id="@id/tabs" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:slidingBlock="@drawable/sliding_block_bg" app:allowWidthFull="true" />
+            <View style="@style/normal_line_vertical" />
+            <android.support.v4.view.ViewPager android:id="@id/pager" style="@style/MatchMatch" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/lltTag" android:background="@color/bg_background" style="@style/MatchMatch.Vertical">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="#ff00a528" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="fill_parent" android:text="大家热搜" style="@style/normal_tx_theme" />
+            <View style="@style/normal_line_vertical" />
+            <me.next.tagview.TagCloudView android:id="@id/tagGroup" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x5" app:tcvBackground="@drawable/bg_label_tag" app:tcvTextColor="@color/normal_text_color" app:tcvBorder="8.0dip" app:tcvItemBorderVertical="10.0dip" app:tcvItemBorderHorizontal="10.0dip" app:tcvSingleLine="false" app:tcvCanTagClick="true" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

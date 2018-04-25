@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView android:fillViewport="true" style="@style/MatchWrap">
+        <LinearLayout style="@style/MatchWrap.Vertical">
+            <View android:layout_marginTop="3.0dip" style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnHangye" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="行业类别" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:paddingRight="@dimen/regular_dimen_x5" android:text="可多选(点击可删除)" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvBase" android:background="@android:color/white" android:listSelector="@android:color/transparent" android:foreground="?selectableItemBackground" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" style="@style/MatchWrap" />
+            <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnHead" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap">
+                <TextView android:text="头像" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="@dimen/me_head_size" android:layout_height="@dimen/me_head_size" android:src="@mipmap/ic_default_head" android:layout_toLeftOf="@id/vArrow" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+                <ImageView android:id="@id/vArrow" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/WrapWrap" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnName" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx01" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="姓名" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvName" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/tx01" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View android:visibility="gone" style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnCompany" android:background="@android:color/white" android:visibility="gone" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx1" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="工作地点" android:layout_alignParentLeft="true" style="@style/normal_tx_theme" />
+                <ImageView android:id="@id/icon1" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvCompany" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/icon1" android:layout_toRightOf="@id/tx1" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnUnitName" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx02" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="单位名称" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvUnitName" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/tx02" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnIdentity" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx3" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="身份" style="@style/normal_tx_theme" />
+                <ImageView android:id="@id/icon3" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvIdentity" android:paddingLeft="@dimen/regular_dimen_x5" android:singleLine="true" android:layout_toLeftOf="@id/icon3" android:layout_toRightOf="@id/tx3" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnEducation" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx03" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="学历" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvEducation" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/tx03" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnAddress" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx04" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="地址" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvAddress" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/tx04" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnSex" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="性别" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvSex" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnPhone" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx2" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="手机号码" style="@style/normal_tx_theme" />
+                <ImageView android:id="@id/icon2" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/gray_text_color" android:textColorHint="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvPhone" android:paddingLeft="@dimen/regular_dimen_x10" android:singleLine="true" android:layout_toLeftOf="@id/icon2" android:layout_toRightOf="@id/tx2" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+            <RelativeLayout android:id="@id/btnEmail" android:background="@android:color/white" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:id="@id/tx05" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="邮箱" style="@style/normal_tx_theme" />
+                <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvEmail" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_toRightOf="@id/tx05" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View android:layout_marginBottom="@dimen/regular_dimen_x10" style="@style/normal_line_vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

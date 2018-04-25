@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout style="@style/MatchMatch">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout style="@style/MatchWrap.Vertical">
+                <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                    <TextView android:id="@id/tvName" android:text="" style="@style/normal_tx_theme" />
+                    <TextView android:id="@id/tvPhone" android:text="" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap">
+                    <TextView android:textSize="@dimen/font_small" android:id="@id/tvCard" android:text="" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_small" android:id="@id/tvTypeName" android:visibility="gone" android:text="" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <TextView android:textColor="@color/theme_color" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x8" android:paddingBottom="@dimen/regular_dimen_x8" android:text="基本资料" style="@style/normal_tx_theme.Match" />
+                <LinearLayout android:background="@android:color/white" style="@style/MatchWrap.Vertical">
+                    <RelativeLayout android:id="@id/btnPhoto" style="@style/MatchWrap">
+                        <TextView android:layout_marginLeft="@dimen/regular_dimen_x15" android:text="一寸照片" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <ImageView android:id="@id/iconPhoto" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/ivPhoto" android:layout_width="50.0dip" android:layout_height="70.0dip" android:layout_marginTop="@dimen/regular_dimen_x5" android:layout_marginBottom="@dimen/regular_dimen_x5" android:src="@mipmap/icon_default_user" android:scaleType="centerCrop" android:layout_toLeftOf="@id/iconPhoto" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:text="出生年月" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="right" android:id="@id/etBirthday" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x35" android:inputType="datetime" style="@style/normal_edt_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnNationality" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="民族" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvNationality" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnPolitical" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="政治面貌" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvPolitical" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnLocation" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="户籍所在地" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvLocation" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnApplyType" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="申请方式" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvApplyType" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" style="@style/MatchWrap.Horizontal">
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                    <TextView android:textColor="@color/theme_color" android:paddingTop="@dimen/regular_dimen_x8" android:paddingBottom="@dimen/regular_dimen_x8" android:text="学习培训经历" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:gravity="right" android:paddingRight="@dimen/regular_dimen_x15" android:text="系统将自动记录您参加国家培训的经历" style="@style/normal_tx_theme.Match" />
+                </LinearLayout>
+                <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                    <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="参加地方农业培训" style="@style/normal_tx_theme" />
+                    <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchTrained" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/lltTrained" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:text="每年平均次数" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="right" android:id="@id/etOtherTrainingTime" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x35" android:inputType="number" style="@style/normal_edt_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnExperience" android:background="@android:color/white" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:text="培训经历" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:ellipsize="end" android:gravity="right" android:id="@id/etTrainingExperience" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x35" android:singleLine="true" style="@style/normal_edt_theme" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" style="@style/MatchWrap.Horizontal">
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                    <TextView android:textColor="@color/theme_color" android:paddingTop="@dimen/regular_dimen_x8" android:paddingBottom="@dimen/regular_dimen_x8" android:text="获取证书情况" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                    <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="获取证书" style="@style/normal_tx_theme" />
+                    <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchCFertificate" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/lltCFertificate" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="新型职业农民培训证书" style="@style/normal_tx_theme" />
+                        <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchNewCFertificate" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="国家职业资格证书" style="@style/normal_tx_theme" />
+                        <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchNationalCFertificate" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnGrade" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="国家职业资格证书等级" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvGrade" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" style="@style/MatchWrap.Horizontal">
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                    <TextView android:textColor="@color/theme_color" android:paddingTop="@dimen/regular_dimen_x8" android:paddingBottom="@dimen/regular_dimen_x8" android:text="认定情况" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                    <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="新型职业农民证书认定" style="@style/normal_tx_theme" />
+                    <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchNew" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/lltNew" android:visibility="gone" style="@style/MatchWrap.Vertical">
+                    <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvNew" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+                    <View style="@style/normal_line_vertical" />
+                    <TextView android:textColor="@color/theme_color" android:gravity="center" android:id="@id/btnAdd" android:background="@color/white" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="添加认定信息" android:singleLine="true" style="@style/normal_tx_theme.Match" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/lltOne" android:visibility="gone" style="@style/MatchMatch.Vertical">
+                    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" style="@style/MatchWrap.Vertical">
+                        <TextView android:textColor="@color/theme_color" android:paddingTop="@dimen/regular_dimen_x8" android:text="产业经营情况" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvIndustry" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x8" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="从业年限" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etYear" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:text="年" android:singleLine="true" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="上年度经营收入" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etIncome" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:text="万元" android:singleLine="true" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:text="农场情况" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:gravity="right" android:id="@id/tvTag" android:paddingRight="@dimen/regular_dimen_x15" android:text="家庭农场经营者填写" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <LinearLayout android:background="@android:color/white" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@id/tag1" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="0.0dip" android:text="是否登记注册" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+                        <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchRegister" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnFarmLevel" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@id/tag2" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="示范性家庭农场" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvFarmLevel" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@id/tag3" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="土地经营规模" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etScale" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:text="亩" android:singleLine="true" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@id/tag4" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="家庭总人口" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etFamilyPerson" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:text="人" android:singleLine="true" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@id/tag5" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="家庭从业人数" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etFamilyWorkingPerson" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:text="人" android:singleLine="true" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@android:color/holo_red_light" android:gravity="center" android:id="@id/tag6" android:layout_width="@dimen/regular_dimen_x15" android:layout_height="wrap_content" android:text="*" />
+                        <TextView android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="上年度家庭总收入" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etLastYearFamilyIncome" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:text="万元" android:singleLine="true" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/lltTwo" android:visibility="gone" style="@style/MatchMatch.Vertical">
+                    <TextView android:textColor="@color/theme_color" android:padding="@dimen/regular_dimen_x8" android:text="从业服务情况情况" style="@style/normal_tx_theme.Match" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnAddress" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="工作地点" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvAddress" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnCraft" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="从事工种" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/tvCraft" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" android:singleLine="true" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <RelativeLayout android:background="@android:color/white" style="@style/MatchWrap">
+                        <TextView android:gravity="center_vertical" android:id="@id/txY" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="从业年限" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:gravity="center_vertical" android:id="@id/txr" android:paddingTop="@dimen/edt_padding_small" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/edt_padding_small" android:text="年" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etJobYear" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:singleLine="true" android:layout_toLeftOf="@id/txr" android:layout_toRightOf="@id/txY" android:layout_centerVertical="true" android:inputType="number" style="@style/normal_edt_theme" />
+                    </RelativeLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:gravity="center_vertical" android:background="@android:color/white" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingLeft="@dimen/regular_dimen_x15" android:text="年收入" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        <EditText android:textColor="@color/gray_text_color" android:gravity="center|right" android:id="@id/etAnnualIncome" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingTop="@dimen/edt_padding_small" android:paddingRight="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="0.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" style="@style/normal_edt_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:text="万元" android:singleLine="true" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/lltSubmit" android:background="@android:color/white" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                    <TextView android:textColor="@color/theme_color" android:id="@id/btnSave" android:background="@drawable/bg_input_theme" android:paddingLeft="@dimen/regular_dimen_x30" android:paddingRight="@dimen/regular_dimen_x30" android:layout_width="wrap_content" android:layout_marginRight="@dimen/regular_dimen_x20" android:text="保存" style="@style/normal_btn_theme" />
+                    <TextView android:id="@id/btnSubmit" android:background="@drawable/btn_theme" android:paddingLeft="@dimen/regular_dimen_x30" android:paddingRight="@dimen/regular_dimen_x30" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x20" android:text="提交" style="@style/normal_btn_theme" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

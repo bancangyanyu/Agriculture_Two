@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivIcon" android:src="@drawable/bg_normal" style="@style/WrapWrap" />
+        <TextView android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/regular_dimen_x10" android:lines="2" android:layout_toRightOf="@id/ivIcon" android:layout_alignTop="@id/ivIcon" style="@style/normal_tx_theme" />
+        <RelativeLayout android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivIcon" android:layout_alignBottom="@id/ivIcon" style="@style/MatchWrap.Horizontal">
+            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvTime" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/gray_text_color" android:id="@id/tvLook" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/WrapWrap" />
+            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvCollect" android:visibility="gone" android:layout_toLeftOf="@id/tvLook" android:layout_centerVertical="true" style="@style/WrapWrap" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

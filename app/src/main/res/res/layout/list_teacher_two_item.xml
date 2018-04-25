@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="@dimen/regular_dimen_x10" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+    <LinearLayout android:layout_width="0.0dip" android:layout_weight="1.0" style="@style/MatchWrap.Vertical">
+        <TextView android:gravity="center_vertical" android:id="@id/tvName" style="@style/normal_tx_theme" />
+        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:gravity="center_vertical" android:id="@id/tvtype" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:gravity="center_vertical" android:id="@id/tvInfo" style="@style/normal_tx_theme" />
+</LinearLayout>

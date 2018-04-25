@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View style="@style/normal_line_vertical" />
+    <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|right" android:id="@id/layout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/regular_dimen_x1" android:layout_alignParentRight="true">
+            <TextView android:textSize="10.0sp" android:textColor="@color/theme_color" android:background="@drawable/bg_label_theme" android:visibility="invisible" android:text="置顶" style="@style/normal_tx_theme" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffb0b0b0" android:ellipsize="end" android:id="@id/tag1" android:background="@drawable/bg_label_pale_hot" android:layout_marginRight="@dimen/regular_dimen_x3" android:singleLine="true" style="@style/normal_tx_theme" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/theme_color" android:id="@id/tvTop" android:background="@drawable/bg_label_theme" android:text="置顶" style="@style/normal_tx_theme" />
+        </LinearLayout>
+        <ImageView android:id="@id/ivIcon" android:src="@drawable/bg_normal" android:scaleType="centerCrop" android:layout_below="@id/layout01" style="@style/WrapWrap" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layout" android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivIcon" android:layout_alignTop="@id/ivIcon" style="@style/MatchWrap.Horizontal">
+            <TextView android:ellipsize="end" android:id="@id/tvTitle" android:layout_width="fill_parent" android:lines="2" style="@style/normal_tx_theme" />
+        </LinearLayout>
+        <RelativeLayout android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivIcon" android:layout_alignBottom="@id/ivIcon" style="@style/MatchWrap.Horizontal">
+            <TextView android:textSize="10.0sp" android:textColor="@color/gray_text_color" android:gravity="center_vertical" android:id="@id/tvLook" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/normal_tx_theme" />
+            <LinearLayout android:gravity="center_vertical" android:layout_toLeftOf="@id/tvLook" android:layout_alignParentBottom="true" style="@style/MatchWrap.Horizontal">
+                <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/tvTime" android:singleLine="true" style="@style/normal_tx_theme" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

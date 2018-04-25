@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v1" style="@style/normal_line_vertical" />
+    <View android:id="@id/v2" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginRight="@dimen/regular_dimen_x15" style="@style/normal_line_vertical" />
+    <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/regular_dimen_x10">
+            <TextView android:id="@id/tvTitle" style="@style/normal_tx_theme" />
+            <TextView android:gravity="right" android:id="@id/txName" style="@style/normal_tx_theme.Match" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvTime" android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_tx_theme" />
+    </LinearLayout>
+</LinearLayout>

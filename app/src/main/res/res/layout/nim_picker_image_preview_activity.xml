@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/picker_image_preview_root" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager android:id="@id/picker_image_preview_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/picker_image_preview_operator_bar" android:background="#ffe6e6e6" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/picker_image_preview_orignal_image" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/nim_picker_orignal_normal" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/picker_image_preview_orignal_image_tip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:text="@string/picker_image_preview_original" />
+        <View android:id="@id/holder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:enabled="true" android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/picker_image_preview_send" android:background="@drawable/btn_theme" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/picker_image_send" />
+    </LinearLayout>
+    <android.support.design.widget.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/app_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:paddingTop="@dimen/toolbar_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:titleTextAppearance="@style/Toolbar.TitleText">
+            <include layout="@layout/nim_action_bar_right_picker_preview" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+</FrameLayout>

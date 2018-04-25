@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchWrap">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+        <LinearLayout android:visibility="visible" android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_toRightOf="@id/ivHead" android:layout_centerVertical="true" style="@style/MatchWrap.Vertical">
+            <TextView android:id="@id/tvName" style="@style/normal_tx_theme" />
+            <TextView android:textSize="@dimen/font_small" android:id="@id/tvIdentity" android:layout_marginTop="@dimen/regular_dimen_x2" style="@style/normal_tx_theme" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/normal_line_vertical" />
+    <LinearLayout android:id="@id/lltAll" android:visibility="visible" android:layout_marginTop="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+        <View style="@style/normal_line_vertical" />
+        <LinearLayout android:id="@id/lltPhone" android:visibility="gone" style="@style/MatchWrap.Vertical">
+            <LinearLayout android:gravity="top" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="60.0dip" android:text="手机" style="@style/normal_tx_theme" />
+                <TextView android:gravity="center_vertical" android:id="@id/tvPhone" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" style="@style/normal_tx_theme.Match" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/lltCompany" android:visibility="gone" style="@style/MatchWrap.Vertical">
+            <LinearLayout android:gravity="top" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="60.0dip" android:text="单位" style="@style/normal_tx_theme" />
+                <TextView android:gravity="center_vertical" android:id="@id/tvCompany" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" style="@style/normal_tx_theme.Match" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/lltAddress" android:visibility="gone" style="@style/MatchWrap.Vertical">
+            <LinearLayout android:gravity="top" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="60.0dip" android:text="地区" style="@style/normal_tx_theme" />
+                <TextView android:gravity="center_vertical" android:id="@id/tvAddress" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" style="@style/normal_tx_theme.Match" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/lltDisturb" android:visibility="gone" style="@style/MatchWrap.Vertical">
+            <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+            <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="60.0dip" android:text="消息提醒" style="@style/normal_tx_theme" />
+                <com.ureading.sunongtong.views.widget.SwitchView android:id="@id/switchPush" android:layout_width="@dimen/regular_dimen_x30" android:layout_height="@dimen/regular_dimen_x30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/lltClear" android:visibility="gone" style="@style/MatchWrap.Vertical">
+            <RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+                <TextView android:gravity="center_vertical" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_width="fill_parent" android:text="清空聊天记录" style="@style/normal_tx_theme" />
+            </RelativeLayout>
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/gray_text_color" android:gravity="center" android:id="@id/tvTip" android:visibility="gone" android:layout_marginTop="@dimen/regular_dimen_x40" android:text="该用户暂未启用聊天功能" style="@style/normal_tx_theme.Match" />
+    <Button android:id="@id/btnAdd" android:background="@drawable/btn_theme" android:visibility="gone" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x40" android:layout_marginRight="@dimen/regular_dimen_x15" android:text="添加" style="@style/normal_btn_theme" />
+    <Button android:id="@id/btnSend" android:background="@drawable/btn_theme" android:visibility="gone" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x40" android:layout_marginRight="@dimen/regular_dimen_x15" android:text="发消息" style="@style/normal_btn_theme" />
+    <Button android:textColor="@color/normal_text_color" android:id="@id/btnDel" android:background="@drawable/btn_white" android:visibility="gone" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x10" android:layout_marginRight="@dimen/regular_dimen_x15" android:text="删除好友" style="@style/normal_btn_theme" />
+</LinearLayout>

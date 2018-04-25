@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" style="@style/MatchWrap.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_medium" android:id="@id/tvName" android:padding="@dimen/regular_dimen_x10" style="@style/normal_tx_theme.Match" />
+    <TextView android:textSize="@dimen/font_micro" android:id="@id/tvType" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x10" style="@style/normal_tx_theme.Match" />
+    <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvUnit" android:padding="@dimen/regular_dimen_x10" style="@style/normal_tx_theme.Match" />
+    <LinearLayout android:id="@id/lltEvaluation" style="@style/MatchWrap.Vertical">
+        <View style="@style/normal_line_vertical" />
+        <RelativeLayout android:id="@id/rltEvaluation" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+            <TextView android:textSize="@dimen/font_micro" android:textColor="#ffe27142" android:id="@id/tvState" android:text="待评价" android:layout_centerVertical="true" style="@style/normal_tx_theme.Match" />
+            <TextView android:textSize="@dimen/font_micro" android:textColor="@color/white" android:id="@id/btnEvaluation" android:background="@drawable/btn_theme" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x5" android:visibility="visible" android:layout_width="wrap_content" android:minHeight="0.0dip" android:text="去评价" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

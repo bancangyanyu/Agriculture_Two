@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:descendantFocusability="beforeDescendants" style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View style="@style/normal_line_vertical" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="@dimen/me_head_size" android:layout_height="@dimen/me_head_size" android:src="@mipmap/ic_default_head" app:border_width="@dimen/line_width_2x" app:border_color="#ffc6c6c6" />
+            <LinearLayout style="@style/MatchWrap.Vertical">
+                <LinearLayout android:paddingRight="@dimen/regular_dimen_x5" style="@style/MatchWrap.Vertical">
+                    <RelativeLayout style="@style/MatchWrap">
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/tvName" android:paddingRight="@dimen/regular_dimen_x10" android:layout_marginLeft="@dimen/regular_dimen_x10" android:singleLine="true" android:layout_toLeftOf="@id/tvIdentity" style="@style/normal_tx_theme.Match" />
+                        <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvIdentity" android:background="@drawable/bg_label_white" android:text="普通农户" android:layout_toLeftOf="@id/tvLabel" android:layout_alignParentRight="true" style="@style/normal_tx_theme" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvAddress" android:paddingTop="@dimen/regular_dimen_x1" android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x2" android:singleLine="true" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <TextView android:id="@id/tvContent" android:paddingRight="@dimen/regular_dimen_x5" android:layout_marginLeft="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x1" style="@style/normal_tx_theme.Match" />
+                <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvImg" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x1" android:paddingRight="@dimen/regular_dimen_x20" android:paddingBottom="@dimen/regular_dimen_x5" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x8" android:numColumns="3" style="@style/MatchWrap" />
+                <FrameLayout android:id="@id/fltVideo" android:paddingRight="@dimen/regular_dimen_x5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="1.0dip" android:layout_marginRight="@dimen/regular_dimen_x15">
+                    <ImageView android:id="@id/ivCommentVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" />
+                    <ImageView android:layout_gravity="center" android:id="@id/btnCommentStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_white" />
+                </FrameLayout>
+                <RelativeLayout style="@style/MatchWrap">
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:id="@id/tvTime" android:layout_marginTop="@dimen/regular_dimen_x1" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/gray_text_color" android:id="@id/btnDelete" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x10" android:layout_marginTop="@dimen/regular_dimen_x1" android:text="删除" android:layout_toRightOf="@id/tvTime" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/gray_text_color" android:id="@id/btnBest" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x10" android:visibility="gone" android:layout_marginTop="@dimen/regular_dimen_x1" android:text="设置最佳" android:layout_toRightOf="@id/tvTime" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_micro" android:textColor="@color/gray_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvClive" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x5" android:drawableLeft="@drawable/icon_like_selecter" android:drawablePadding="@dimen/regular_dimen_x5" android:layout_toLeftOf="@id/tvMsg" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/normal_line_vertical" />
+</LinearLayout>

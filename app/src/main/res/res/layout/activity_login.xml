@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/bg_login" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_height="220.0dip" style="@style/MatchWrap">
+        <ImageView android:id="@id/btnBack" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x10" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:layout_marginTop="@dimen/regular_dimen_x25" android:src="@drawable/ic_keyboard_arrow_left_black_36dp" style="?attr/toolbarNavigationButtonStyle" />
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@id/ivHead" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginBottom="@dimen/regular_dimen_x30" android:src="@mipmap/ic_default_head" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:border_width="@dimen/regular_dimen_x2" app:border_color="#90bbdbc1" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/regular_dimen_x30" android:paddingRight="@dimen/regular_dimen_x30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/font_normal" android:textColor="#ffc1e9ba" android:textColorHint="#ffc1e9ba" android:id="@id/etPhone" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:hint="手机号" android:maxLength="11" android:drawableLeft="@mipmap/icon_user" android:drawablePadding="@dimen/regular_dimen_x15" android:inputType="phone" style="@style/normal_edt_theme" />
+        <View android:background="#ffc1e9ba" style="@style/normal_line_vertical" />
+        <EditText android:textSize="@dimen/font_normal" android:textColor="#ffc1e9ba" android:textColorHint="#ffc1e9ba" android:id="@id/etPass" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x5" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginTop="@dimen/regular_dimen_x10" android:hint="密码" android:drawableLeft="@mipmap/icon_password" android:drawablePadding="@dimen/regular_dimen_x15" android:inputType="textPassword" style="@style/normal_edt_theme" />
+        <View android:background="#ffc1e9ba" style="@style/normal_line_vertical" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x5" android:layout_marginTop="@dimen/regular_dimen_x5">
+            <CheckBox android:id="@id/cbAgree" android:background="@drawable/btn_sure" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+            <TextView android:textColor="#ffc1e9ba" android:id="@id/tvAgree" android:layout_marginLeft="0.0dip" android:text="@string/login_tag" style="@style/normal_tx_theme" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/font_large" android:id="@id/btnLogin" android:background="@drawable/btn_login" android:layout_marginTop="@dimen/regular_dimen_x25" android:text="@string/user_login_title" style="@style/normal_btn_theme" />
+        <RelativeLayout android:layout_marginTop="@dimen/regular_dimen_x10" style="@style/MatchWrap">
+            <TextView android:textSize="@dimen/font_small" android:textColor="#ffc1e9ba" android:id="@id/btnForget" android:padding="@dimen/edt_padding_small" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" android:text="@string/user_forget_password_btn" style="@style/normal_tx_theme" />
+            <LinearLayout android:gravity="center" android:layout_alignParentRight="true" style="@style/WrapWrap.Horizontal">
+                <TextView android:textSize="@dimen/font_small" android:textColor="#ffc1e9ba" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="还没有账号?" style="@style/normal_tx_theme" />
+                <Button android:textSize="@dimen/font_small" android:textColor="#ff0e6938" android:id="@id/btnRegister" android:background="@drawable/btn_gray" android:paddingLeft="@dimen/regular_dimen_x10" android:paddingTop="@dimen/regular_dimen_x5" android:paddingRight="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_marginLeft="@dimen/regular_dimen_x5" android:text="现在注册" style="@style/normal_btn_theme" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:paddingLeft="@dimen/regular_dimen_x30" android:paddingRight="@dimen/regular_dimen_x30" android:visibility="visible" style="@style/MatchMatch.Vertical">
+        <LinearLayout android:gravity="center_vertical" style="@style/MatchWrap.Horizontal">
+            <View android:background="#ffc1e9ba" android:layout_weight="1.0" style="@style/normal_line_vertical" />
+            <TextView android:textColor="#ffc1e9ba" android:gravity="center" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x20" android:layout_marginBottom="@dimen/regular_dimen_x20" android:text="快捷登录" style="@style/normal_tx_theme" />
+            <View android:background="#ffc1e9ba" android:layout_weight="1.0" style="@style/normal_line_vertical" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_marginBottom="@dimen/regular_dimen_x30" style="@style/MatchWrap.Horizontal">
+            <ImageView android:id="@id/btnQQ" android:layout_marginRight="@dimen/regular_dimen_x30" android:src="@drawable/btn_qq" style="@style/WrapWrap" />
+            <ImageView android:id="@id/btnWX" android:layout_marginLeft="@dimen/regular_dimen_x30" android:src="@drawable/btn_wx" style="@style/WrapWrap" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

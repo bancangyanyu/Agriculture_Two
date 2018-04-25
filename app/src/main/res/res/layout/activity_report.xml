@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:fillViewport="true" android:overScrollMode="never" style="@style/MatchMatch">
+        <LinearLayout style="@style/MatchWrap.Vertical">
+            <View android:background="@color/bg_background" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+            <LinearLayout android:background="@android:color/white" style="@style/MatchWrap.Vertical">
+                <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                    <TextView android:text="标        题" style="@style/normal_tx_theme" />
+                    <EditText android:id="@id/etTitle" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="请输入标题" android:maxLength="16" style="@style/normal_edt_theme" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                    <TextView android:text="上  报  人" style="@style/normal_tx_theme" />
+                    <EditText android:enabled="false" android:id="@id/etReporter" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:hint="请填入上报人" android:maxLength="11" android:inputType="phone" style="@style/normal_edt_theme" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+                <RelativeLayout android:id="@id/btnType" android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x5" style="@style/MatchWrap">
+                    <TextView android:gravity="center_vertical" android:id="@id/tx1" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:text="类        型" android:layout_alignParentLeft="true" style="@style/normal_tx_theme" />
+                    <ImageView android:id="@id/icon1" android:paddingRight="@dimen/regular_dimen_x5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_keyboard_arrow_right_gary_30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textColorHint="@color/gray_text_color" android:gravity="center_vertical" android:id="@id/tx_type" android:paddingLeft="@dimen/regular_dimen_x15" android:hint="请选择上报类型" android:singleLine="true" android:layout_toLeftOf="@id/icon1" android:layout_toRightOf="@id/tx1" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:id="@id/lltName" style="@style/MatchWrap.Vertical">
+                    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingRight="1.0dip" android:text="拜访农民" style="@style/normal_tx_theme" />
+                        <EditText android:id="@id/etName" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="请输入拜访农民的姓名" android:maxLength="16" style="@style/normal_edt_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/lltTest" style="@style/MatchWrap.Vertical">
+                    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                        <TextView android:paddingRight="1.0dip" android:text="识  别  码" style="@style/normal_tx_theme" />
+                        <EditText android:id="@id/etTestString" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="请输入识别码" android:maxLength="16" style="@style/normal_edt_theme" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/bg_background" android:layout_width="fill_parent" android:layout_height="@dimen/regular_dimen_x5" />
+            <LinearLayout android:background="@android:color/white" style="@style/MatchWrap.Vertical">
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                    <TextView android:paddingRight="1.0dip" android:text="上报地址" style="@style/normal_tx_theme" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/btnAddress" style="@style/MatchWrap.Horizontal">
+                        <TextView android:textColorHint="@color/theme_color" android:id="@id/tvAddress" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="点击获取定位地址" android:singleLine="false" style="@style/normal_edt_theme.Wrap" />
+                        <ImageView android:id="@id/ivAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_address" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+                <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                    <TextView android:text="备        注" style="@style/normal_tx_theme" />
+                    <EditText android:gravity="top" android:id="@id/etDes" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_height="100.0dip" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="请输入文本说明" android:maxLength="120" android:inputType="none" style="@style/normal_edt_theme" />
+                </LinearLayout>
+                <View style="@style/normal_line_vertical" />
+            </LinearLayout>
+            <FrameLayout style="@style/MatchMatch">
+                <LinearLayout style="@style/MatchMatch.Vertical">
+                    <View android:background="@color/bg_background" android:layout_width="fill_parent" android:layout_height="@dimen/regular_dimen_x5" />
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:background="@android:color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:text="添加照片" style="@style/normal_tx_theme" />
+                        <com.ureading.sunongtong.views.widget.ScrollGridView android:id="@id/gvImage" android:background="@android:color/transparent" android:layout_marginLeft="@dimen/regular_dimen_x15" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/regular_dimen_x8" android:verticalSpacing="@dimen/regular_dimen_x8" android:numColumns="3" style="@style/MatchWrap" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/lltImg" android:background="@color/bg_background" android:visibility="gone" style="@style/MatchMatch" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

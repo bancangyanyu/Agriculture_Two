@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView android:background="@color/white" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchMatch">
+        <LinearLayout style="@style/MatchMatch.Vertical">
+            <View style="@style/normal_line_vertical" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/btnFriend" android:background="@android:color/white" android:layout_height="48.0dip" style="@style/MatchWrap.Horizontal">
+                <TextView android:gravity="center_vertical" android:paddingLeft="@dimen/regular_dimen_x16" android:text="选择好友" style="@style/normal_tx_theme" />
+                <TextView android:paddingRight="@dimen/regular_dimen_x5" android:drawableRight="@drawable/ic_keyboard_arrow_right_gary_30dp" style="@style/MatchWrap" />
+            </LinearLayout>
+            <View style="@style/normal_line_vertical" />
+            <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvBase" android:listSelector="@android:color/transparent" android:foreground="?selectableItemBackground" android:divider="@null" style="@style/MatchMatch" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

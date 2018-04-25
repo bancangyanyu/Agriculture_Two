@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:paddingTop="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x15" style="@style/MatchWrap.Horizontal">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center|left" style="@style/WrapWrap.Vertical">
+                        <TextView android:textSize="@dimen/font_big" android:id="@id/tvAddress" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/tvDate" style="@style/normal_tx_theme" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/gray_text_color" android:id="@id/tvTime" style="@style/normal_tx_theme" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_weight="0.9" style="@style/MatchWrap">
+                    <TextView android:textSize="40.0sp" android:textStyle="bold" android:textColor="#ff888888" android:gravity="center" android:id="@id/tvDu" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/gray_text_color" android:id="@id/tvWind" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.9">
+                    <ImageView android:id="@id/ivWeather" style="@style/normal_tx_theme" />
+                    <TextView android:textSize="@dimen/font_large" android:textColor="@color/gray_text_color" android:id="@id/tvWeather" android:layout_marginTop="@dimen/regular_dimen_x2" style="@style/normal_tx_theme" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvWeather" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

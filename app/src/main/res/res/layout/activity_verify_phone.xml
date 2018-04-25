@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <LinearLayout android:background="@android:color/white" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchWrap.Vertical">
+        <View style="@style/normal_line_vertical" />
+        <RelativeLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingRight="@dimen/regular_dimen_x15" style="@style/MatchWrap">
+            <EditText android:id="@id/etPhone" android:background="@android:color/transparent" android:paddingTop="@dimen/edt_padding_small" android:paddingBottom="@dimen/edt_padding_small" android:layout_marginRight="@dimen/regular_dimen_x15" android:hint="@string/user_hint_phone" android:maxLength="11" android:layout_toLeftOf="@id/btnCode" android:inputType="phone" style="@style/normal_edt_theme" />
+            <Button android:id="@id/btnCode" android:background="@drawable/btn_theme" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" android:layout_width="wrap_content" android:text="@string/user_btn_code" android:minEms="6" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_btn_theme" />
+        </RelativeLayout>
+        <View style="@style/normal_line_vertical" />
+        <EditText android:id="@id/etCode" android:background="@android:color/transparent" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/edt_padding_small" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/edt_padding_small" android:hint="@string/user_hint_code" android:maxLength="10" android:inputType="numberSigned" style="@style/normal_edt_theme" />
+        <View style="@style/normal_line_vertical" />
+    </LinearLayout>
+    <Button android:id="@id/btnNext" android:background="@drawable/btn_theme" android:layout_marginLeft="@dimen/regular_dimen_x15" android:layout_marginTop="@dimen/regular_dimen_x40" android:layout_marginRight="@dimen/regular_dimen_x15" android:text="@string/user_btn_next" style="@style/normal_btn_theme" />
+</LinearLayout>

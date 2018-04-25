@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="#ff2dc667" android:paddingTop="@dimen/toolbar_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <TextView android:enabled="false" android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_text" android:text="图片预览" />
+            <TextView android:textSize="@dimen/small_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center|right" android:id="@id/tvSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="保存图片" />
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    <com.yongchun.library.widget.PreviewViewPager android:id="@id/preview_pager" android:background="@color/content_grey" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

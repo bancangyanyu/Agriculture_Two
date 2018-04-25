@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/partial_action_bar" />
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout android:id="@id/refresh" style="@style/MatchMatch">
+        <ScrollView android:id="@id/scrollView" android:scrollbars="none" android:overScrollMode="never" style="@style/MatchMatch">
+            <LinearLayout android:orientation="vertical" android:layout_marginTop="@dimen/regular_dimen_x3" style="@style/MatchWrap">
+                <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:gravity="center_vertical" android:id="@id/ibtn_before" android:background="@android:color/transparent" android:padding="@dimen/regular_dimen_x10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/regular_dimen_x5" android:src="@drawable/btn_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font_normal" android:id="@id/tx_time" android:layout_centerInParent="true" style="@style/normal_tx_theme" />
+                    <ImageButton android:id="@id/ibtn_after" android:background="@android:color/transparent" android:padding="@dimen/regular_dimen_x10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/regular_dimen_x5" android:src="@drawable/btn_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View style="@style/normal_line_vertical" />
+                <ViewFlipper android:id="@id/flipper" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View style="@style/normal_line_vertical" />
+                <View android:layout_marginTop="@dimen/regular_dimen_x5" style="@style/normal_line_vertical" />
+                <LinearLayout android:id="@id/lltTitle" style="@style/MatchWrap.Vertical">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="#ffe85a00" android:background="@color/white" android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingBottom="@dimen/regular_dimen_x10" android:text="已上传日志" android:drawableLeft="@mipmap/icon_file" android:drawablePadding="@dimen/regular_dimen_x5" style="@style/normal_tx_theme.Match" />
+                    <View style="@style/normal_line_vertical" />
+                </LinearLayout>
+                <com.ureading.sunongtong.views.widget.ScrollListView android:id="@id/lvCheck" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@color/line_color" android:dividerHeight="@dimen/line_width" />
+            </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

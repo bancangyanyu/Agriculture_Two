@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/partial_action_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout style="@style/MatchMatch">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/llt">
+                <LinearLayout style="@style/MatchWrap.Vertical">
+                    <com.bigkoo.convenientbanner.ConvenientBanner android:id="@id/convenientBanner" android:background="@drawable/bg_normal" android:layout_width="fill_parent" android:layout_height="140.0dip" app:canLoop="true" />
+                    <FrameLayout android:id="@id/fltVideo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip">
+                        <ImageView android:id="@id/ivVideo" android:background="@drawable/bg_normal" android:layout_width="fill_parent" android:layout_height="140.0dip" android:scaleType="centerCrop" />
+                        <ImageView android:layout_gravity="center" android:id="@id/btnStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_video_white" />
+                    </FrameLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+                        <TextView android:id="@id/tvProduct" android:lines="1" style="@style/normal_tx_theme.Match" />
+                        <RelativeLayout style="@style/MatchWrap">
+                            <TextView android:textSize="@dimen/text_size_17" android:textColor="#ffff2e2f" android:id="@id/tvPrice" android:layout_marginTop="@dimen/regular_dimen_x10" android:lines="1" style="@style/normal_tx_theme" />
+                            <TextView android:textColor="@color/gray_text_color" android:id="@id/tvTime" android:lines="1" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/normal_tx_theme" />
+                        </RelativeLayout>
+                        <TextView android:id="@id/tvAddress" android:layout_marginTop="@dimen/regular_dimen_x10" android:lines="1" android:drawableLeft="@mipmap/icon_address" android:drawablePadding="@dimen/regular_dimen_x10" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:id="@id/tvTipNum" android:text="供应数量：" android:lines="1" style="@style/normal_tx_theme" />
+                        <TextView android:id="@id/tvNum" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lltName" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View style="@style/normal_line_vertical" />
+                        <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                            <TextView android:text="企业名称：" android:lines="1" style="@style/normal_tx_theme" />
+                            <TextView android:id="@id/tvName" style="@style/normal_tx_theme.Match" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:text="有效期至：" android:lines="1" style="@style/normal_tx_theme" />
+                        <TextView android:id="@id/tvVTime" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Horizontal">
+                        <TextView android:text="联系人：" android:lines="1" style="@style/normal_tx_theme" />
+                        <TextView android:id="@id/tvUser" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                    <View style="@style/normal_line_vertical" />
+                    <LinearLayout android:paddingLeft="@dimen/regular_dimen_x15" android:paddingTop="@dimen/regular_dimen_x10" android:paddingRight="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x10" style="@style/MatchWrap.Vertical">
+                        <TextView android:text="描述详情：" android:lines="1" style="@style/normal_tx_theme" />
+                        <TextView android:textColor="@color/gray_text_color" android:id="@id/tvDes" android:layout_marginTop="@dimen/regular_dimen_x10" style="@style/normal_tx_theme.Match" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:id="@id/llt" android:visibility="visible" android:layout_alignParentBottom="true" style="@style/MatchWrap.Vertical">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/lltMenu" android:background="@color/theme_color" android:visibility="gone" style="@style/MatchWrap.Horizontal">
+                    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/white" android:gravity="center" android:id="@id/btnSay" android:background="@color/theme_color" android:paddingTop="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x15" android:layout_width="0.0dip" android:text="聊天" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+                    <View android:background="@color/white" android:layout_width="@dimen/line_width" android:layout_height="@dimen/regular_dimen_x20" />
+                    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/white" android:gravity="center" android:id="@id/btnPhone" android:background="@color/theme_color" android:paddingTop="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x15" android:layout_width="0.0dip" android:text="拨打电话" android:layout_weight="1.0" style="@style/normal_tx_theme" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/white" android:gravity="center" android:id="@id/btnState" android:background="#ff5bc5c5" android:paddingTop="@dimen/regular_dimen_x15" android:paddingBottom="@dimen/regular_dimen_x15" android:visibility="gone" android:text="我已售出" style="@style/normal_tx_theme.Match" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.ureading.sunongtong.views.widget.EmptyLayout android:id="@id/errorLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout style="@style/MatchMatch">
+        <LinearLayout android:layout_above="@id/bg" style="@style/MatchMatch.Vertical">
+            <FrameLayout android:id="@id/layout_container" android:layout_weight="1.0" style="@style/MatchAuto" />
+            <View style="@style/normal_line_vertical" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/bg" android:background="@android:color/white" android:layout_alignParentBottom="true" style="@style/MatchWrap.Horizontal">
+            <TextView android:textSize="@dimen/font_micro" android:gravity="center" android:background="@android:color/white" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_menu_index" android:drawableTop="@drawable/btn_index" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/rg_nav" android:background="@android:color/transparent" android:layout_alignParentBottom="true" style="@style/MatchWrap">
+            <RelativeLayout android:id="@id/rbIndex" style="@style/AutoWrap">
+                <RadioButton android:textSize="@dimen/font_micro" android:textColor="@drawable/tab_tx_selecter" android:id="@id/rb" android:background="@null" android:paddingTop="@dimen/regular_dimen_x5" android:paddingBottom="@dimen/regular_dimen_x5" android:clickable="false" android:button="@null" android:text="@string/home_menu_index" android:drawableTop="@drawable/btn_index" android:layout_centerInParent="true" style="@style/WrapWrap" />
+                <View android:id="@id/vMsg" android:background="@drawable/red_circle" android:visibility="gone" android:layout_width="@dimen/regular_dimen_x8" android:layout_height="@dimen/regular_dimen_x8" android:layout_marginTop="5.0dip" android:layout_marginRight="-8.0dip" android:layout_alignTop="@id/rb" android:layout_alignRight="@id/rb" />
+            </RelativeLayout>
+            <RadioButton android:id="@id/rbThinkTank" android:background="@null" android:paddingTop="@dimen/regular_dimen_x5" android:text="@string/home_menu_think_tank" android:drawableTop="@drawable/btn_thinktank" style="@style/nav_item" />
+            <RadioButton android:id="@id/rbQuestions" android:background="@null" android:text="@string/home_menu_questions" android:drawableTop="@drawable/btn_questions" style="@style/nav_item" />
+            <RadioButton android:id="@id/rbExchange" android:background="@null" android:text="@string/home_menu_exchange" android:drawableTop="@drawable/btn_exchange" style="@style/nav_item" />
+            <RadioButton android:id="@id/rbMe" android:background="@null" android:text="@string/home_menu_me" android:drawableTop="@drawable/btn_me" style="@style/nav_item" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>
