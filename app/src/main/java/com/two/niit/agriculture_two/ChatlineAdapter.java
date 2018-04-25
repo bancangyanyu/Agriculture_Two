@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
 
-public class ClintonAdapter implements Adapter{
+public class ChatlineAdapter implements Adapter{
     @Override
     public void registerDataSetObserver(DataSetObserver dataSetObserver) {
 
